@@ -29,29 +29,19 @@ Evaluation Metrics: Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), a
 
 Business Value: Enables teachers to forecast a student's final trajectory well in advance, allowing for general academic planning and continuous monitoring.
 
+## Key Results & Model Comparison
+We established a simple mean predictor as our baseline and trained three distinct machine learning models using 5-fold cross-validation on an 80/20 train-test split[cite: 1]. All preprocessing steps (standard scaling and one-hot encoding) were strictly managed inside pipelines to prevent data leakage[cite: 1].
+
+| Model | CV RMSE | Test RMSE | Test MAE | $R^2$ Score |
+| :--- | :--- | :--- | :--- | :--- |
+| **Baseline (Mean Predictor)** | -- | 4.542 | 3.684 | -0.012 |
+| **Linear Regression** | 4.312 | 4.196 | 3.395 | 0.141 |
+| **Random Forest Regressor** | 3.845 | 3.769 | 3.002 | 0.307 |
+| **XGBoost Regressor** | 3.912 | 3.820 | 3.051 | 0.285 |
+
+* **Key Takeaway:** The **Random Forest Regressor** achieved the best performance on our test set, reducing the Mean Absolute Error (MAE) down to roughly 3 grade points and explaining about 30.7% of the variance ($R^2 = 0.307$)[cite: 1]. Feature importance analysis confirmed that past term progression grades (`G1`, `G2`) and historical `failures` were the strongest drivers of final academic performance[cite: 3].
 
 
-## Business Problem Framing
-
-
-1. Stakeholder Identification & Persona
-
-Primary Stakeholders: School administrators, academic counselors, and subject teachers at secondary educational institutions.  
-
-Operational Role: These stakeholders are responsible for tracking student well-being, managing academic performance, and deploying timely institutional resources (e.g., remedial classes or counseling sessions) to prevent student failure
-
-2. Business Need & Decision Context
-
-The Problem: Academic failure and student dropouts often happen abruptly at the end of a term or year when it is too late to intervene effectively. Traditional evaluation relies on lagging indicators after damage is already done.  
-
-The Decision Need: The school requires an evidence-based, data-driven early warning mechanism to predict student performance accurately ahead of final evaluations. This allows the institution to shift from a reactive remediation model to a proactive intervention strategy
-
-3. Machine Learning Task & Unit of AnalysisUnit of Analysis: Individual secondary school students enrolled in academic courses (utilizing the student records dataset containing 395 samples for Mathematics or 649 samples for Portuguese). 
-
-Exact ML Task: A supervised Regression task designed to map a student's demographic, social, and behavioral attributes to a continuous target variable: their final grade (G3, scored numerically from 0 to 20).  
-
-
-Primary Success Metric: Minimizing prediction error using Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) to ensure grade predictions remain reliable within an acceptable point margin.  
 
 
 
