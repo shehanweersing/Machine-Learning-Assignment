@@ -10,7 +10,7 @@ The objective is to predict students' final grades (`G3`) using demographic, soc
 ## Dataset
 * **Source:** Student Performance Dataset (`student-mat.csv`).
 * **Scope:** This project utilizes **only the Math dataset** ($n=395$ students) to maintain analytical focus and capture high behavioral variance.
-* **Target Variable:** `G3` (Final grade ranging from 0 to 20)[cite: 3].
+* **Target Variable:** `G3` (Final grade ranging from 0 to 20).
 * **Features:** Includes weekly study time, past failures, family background, alcohol consumption, and term progression grades (`G1`, `G2`).
 
 
