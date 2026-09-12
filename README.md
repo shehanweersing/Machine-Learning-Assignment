@@ -1,4 +1,24 @@
 [IT3091_Assignment.pdf](https://github.com/user-attachments/files/31911280/IT3091_Assignment_Descriptor_V1.pdf)
+
+# Student Performance Prediction (Regression Lens)
+
+## Overview
+This branch contains the **Regression component** of our IT3091 Machine Learning group assignment.
+
+The objective is to predict students' final grades (`G3`) using demographic, social, and academic attributes. The predictions can help schools identify students who may need early academic support and intervention.
+
+## Dataset
+* **Source:** Student Performance Dataset (`student-mat.csv`).
+* **Scope:** This project utilizes **only the Math dataset** ($n=395$ students) to maintain analytical focus and capture high behavioral variance.
+* **Target Variable:** `G3` (Final grade ranging from 0 to 20)[cite: 3].
+* **Features:** Includes weekly study time, past failures, family background, alcohol consumption, and term progression grades (`G1`, `G2`).
+
+
+
+
+
+
+
 # Performance Prediction (Regression Lens)
 
 What it is: Predicting a student's exact numerical final grade (G3, scored from 0 to 20) based on academic history, demographics, and lifestyle factors.
