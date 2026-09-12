@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from pathlib import Path
 
 def get_preprocessor(X):
     """
@@ -8,7 +9,7 @@ def get_preprocessor(X):
     and categorical one-hot encoding safely.
     """
     # Identify column types dynamically
-    categorical_cols = X.select_dtypes(include=['object']).columns.tolist()
+    categorical_cols = X.select_dtypes(include=['object','string']).columns.tolist()
     numerical_cols = X.select_dtypes(include=['int64', 'float64']).columns.tolist()
 
     # Define preprocessing steps for numerical and categorical data
