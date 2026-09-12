@@ -50,4 +50,14 @@ The Decision Need: The school requires an evidence-based, data-driven early warn
 
 Exact ML Task: A supervised Regression task designed to map a student's demographic, social, and behavioral attributes to a continuous target variable: their final grade (G3, scored numerically from 0 to 20).  
 
+
+
+
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.2.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+xgboost>=1.7.0
+
 Primary Success Metric: Minimizing prediction error using Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) to ensure grade predictions remain reliable within an acceptable point margin.  
