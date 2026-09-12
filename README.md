@@ -29,18 +29,17 @@ Evaluation Metrics: Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), a
 
 Business Value: Enables teachers to forecast a student's final trajectory well in advance, allowing for general academic planning and continuous monitoring.
 
-## Key Results & Model Comparison
-We established a simple mean predictor as our baseline and trained three distinct machine learning models using 5-fold cross-validation on an 80/20 train-test split[cite: 1]. All preprocessing steps (standard scaling and one-hot encoding) were strictly managed inside pipelines to prevent data leakage[cite: 1].
 
-| Model | CV RMSE | Test RMSE | Test MAE | $R^2$ Score |
-| :--- | :--- | :--- | :--- | :--- |
-| **Baseline (Mean Predictor)** | -- | 4.542 | 3.684 | -0.012 |
-| **Linear Regression** | 4.312 | 4.196 | 3.395 | 0.141 |
-| **Random Forest Regressor** | 3.845 | 3.769 | 3.002 | 0.307 |
-| **XGBoost Regressor** | 3.912 | 3.820 | 3.051 | 0.285 |
+| Model              | CV RMSE | Test RMSE | Test MAE | R2 Score |
+|--------------------|---------|-----------|----------|----------|
+| Baseline (Mean)    | 4.575   | 4.550     | 3.646    | -0.010   |
+| Linear Regression  | 1.895   | 2.378     | 1.647    | 0.724    |
+| Random Forest      | 1.397   | 2.009     | 1.214    | 0.803    |
+| XGBoost            | 1.575   | 2.160     | 1.192    | 0.773    |
 
-* **Key Takeaway:** The **Random Forest Regressor** achieved the best performance on our test set, reducing the Mean Absolute Error (MAE) down to roughly 3 grade points and explaining about 30.7% of the variance ($R^2 = 0.307$)[cite: 1]. Feature importance analysis confirmed that past term progression grades (`G1`, `G2`) and historical `failures` were the strongest drivers of final academic performance[cite: 3].
 
+
+This means Random Forest explains approximately 80.3% of the variation in final student grades, with an average prediction error of about 1.21 grade points.
 
 
 
