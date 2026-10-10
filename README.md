@@ -87,6 +87,12 @@ are in `student-performance-regression/outputs/`. Add the completed
 [personal learning journey](Personal%20Learning%20Journey%20Template.md) per
 group member before submission.
 
+The interactive lecturer-facing dashboard is in
+[website/index.html](website/index.html). It includes the grade distribution,
+correlation analysis, academic progression (`G1` to `G3`), missing-value audit,
+before/after scaling comparison, outlier review, model comparison, prediction
+quality and the responsible recommendation workflow.
+
 
 
 

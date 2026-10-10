@@ -60,3 +60,26 @@ evidence to [`outputs/`](outputs/).
 ![G3 by failures](outputs/g3_by_failures.png)
 
 ![G2 versus G3](outputs/g2_vs_g3.png)
+
+## Additional preprocessing and quality visualizations
+
+The dataset is cross-sectional, so the time-ordered visualization below shows
+academic progression from `G1` to `G2` to `G3`; a calendar time-series claim
+would be inappropriate.
+
+![Academic progression](outputs/academic_progression.png)
+
+The missing-value chart intentionally shows zero missing cells. This is an
+audit result, not a reason to omit the quality check.
+
+![Missing values analysis](outputs/missing_values_analysis.png)
+
+Scaling is fitted inside the model pipeline. The chart illustrates the
+different raw standard deviations and the comparable post-scaling spread; it
+does not use the test set to fit the production transformer.
+
+![Feature scaling comparison](outputs/feature_scaling_comparison.png)
+
+![Top correlations](outputs/top_correlations.png)
+
+![Absence outlier analysis](outputs/absences_outlier_analysis.png)
