@@ -19,6 +19,7 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.dummy import DummyRegressor
 from sklearn.ensemble import ExtraTreesRegressor, RandomForestRegressor
 from sklearn.linear_model import Ridge
@@ -214,6 +215,50 @@ def evaluate_model(model, X_test: pd.DataFrame, y_test: pd.Series) -> dict[str, 
     return metrics
 
 
+def save_model_diagnostics(
+    model,
+    X_test: pd.DataFrame,
+    y_test: pd.Series,
+    output_dir: Path,
+) -> None:
+    """Persist residual and feature-importance evidence for the final model."""
+
+    predictions = np.asarray(model.predict(X_test), dtype=float)
+    residuals = np.asarray(y_test, dtype=float) - predictions
+    pd.DataFrame(
+        {
+            "actual_G3": np.asarray(y_test, dtype=float),
+            "predicted_G3": predictions,
+            "residual": residuals,
+        }
+    ).to_csv(output_dir / "test_predictions_and_residuals.csv", index=False)
+
+    plt.figure(figsize=(8, 5))
+    plt.scatter(predictions, residuals, alpha=0.7, color="purple")
+    plt.axhline(0, color="red", linestyle="--")
+    plt.xlabel("Predicted G3")
+    plt.ylabel("Residual (actual - predicted)")
+    plt.title("Final-model residuals on the untouched test set")
+    plt.tight_layout()
+    plt.savefig(output_dir / "residual_plot.png", dpi=160)
+    plt.close()
+
+    fitted_model = model.named_steps["model"]
+    preprocessor = model.named_steps["preprocessor"]
+    feature_names = preprocessor.get_feature_names_out()
+    if hasattr(fitted_model, "feature_importances_"):
+        importance = fitted_model.feature_importances_
+    elif hasattr(fitted_model, "coef_"):
+        importance = np.abs(np.asarray(fitted_model.coef_))
+    else:
+        return
+    pd.DataFrame(
+        {"feature": feature_names, "importance": importance}
+    ).sort_values("importance", ascending=False).to_csv(
+        output_dir / "feature_importance.csv", index=False
+    )
+
+
 def make_recommendation(
     model,
     X_test: pd.DataFrame,
@@ -278,6 +323,9 @@ def run_workflow(
         X_train, y_train, include_grades=include_grades
     )
     evaluation = evaluate_model(best_search.best_estimator_, X_test, y_test)
+    save_model_diagnostics(
+        best_search.best_estimator_, X_test, y_test, output_dir
+    )
     recommendation = make_recommendation(
         best_search.best_estimator_, X_test
     )

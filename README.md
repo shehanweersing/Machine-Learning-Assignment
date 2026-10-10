@@ -47,6 +47,15 @@ After training-only grid search, Random Forest was selected with
 **0.803**. Thus, the average absolute error was about 1.21 grade points in
 this split; it is not a guarantee for future cohorts.
 
+The final model diagnostics are available in
+[`feature_importance.csv`](student-performance-regression/outputs/with_grades/feature_importance.csv),
+[`test_predictions_and_residuals.csv`](student-performance-regression/outputs/with_grades/test_predictions_and_residuals.csv),
+and [`residual_plot.png`](student-performance-regression/outputs/with_grades/residual_plot.png).
+The largest model-derived importance is assigned to `G2`, which is consistent
+with the EDA correlation but is not evidence that the feature causes the
+final grade. Feature importance is used for interpretation, not causal
+decision-making.
+
 The stricter early-intervention run, which excludes `G1` and `G2`, achieved
 RMSE **4.021**, MAE **3.253**, and R² **0.211**. This large difference is why
 the main claim is explicitly end-of-term rather than early prediction.
@@ -69,9 +78,14 @@ unsuitable for a genuinely pre-assessment intervention.
 ## Evidence and reproducibility
 
 See the [data understanding and EDA evidence](student-performance-regression/EDA/Data%20Understanding%20Table.md),
+[problem framing canvas](Problem%20Framing%20Canvas.md),
+[EDA insight log](student-performance-regression/EDA/EDA%20Insight%20Log.md),
 [preprocessing strategy](student-performance-regression/src/preprocessing.md),
 and [decision log](Decision%20Log%20Table.md). The generated model outputs
-are in `student-performance-regression/outputs/`.
+are in `student-performance-regression/outputs/`. Add the completed
+[AI-use transparency statement](AI%20Use%20Transparency.md) and one completed
+[personal learning journey](Personal%20Learning%20Journey%20Template.md) per
+group member before submission.
 
 
 

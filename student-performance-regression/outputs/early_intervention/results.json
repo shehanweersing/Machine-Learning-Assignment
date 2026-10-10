@@ -137,9 +137,9 @@
   "evaluation": {
     "RMSE": 4.020977582594015,
     "MAE": 3.2529261396880855,
-    "R2": 0.21149849067143567,
-    "prediction_min": 3.5796801587301585,
-    "prediction_max": 15.11339232472965
+    "R2": 0.21149849067143556,
+    "prediction_min": 3.579680158730158,
+    "prediction_max": 15.113392324729652
   },
   "recommendation": {
     "intervention_grade": 10.0,
@@ -147,5 +147,6 @@
     "students_flagged_for_human_review": 14,
     "flag_rate": 0.17721518987341772,
     "action": "Refer flagged students to a teacher or counsellor for human review; do not use predictions as the sole basis for academic decisions."
-  }
+  },
+  "individual_prediction": null
 }

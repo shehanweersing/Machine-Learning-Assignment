@@ -147,5 +147,6 @@
     "students_flagged_for_human_review": 37,
     "flag_rate": 0.46835443037974683,
     "action": "Refer flagged students to a teacher or counsellor for human review; do not use predictions as the sole basis for academic decisions."
-  }
+  },
+  "individual_prediction": null
 }
