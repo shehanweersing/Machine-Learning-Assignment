@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Intervention group profiling lens for the Student Performance ML project">
+  <title>Intervention Profiles | Student Performance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html#overview" aria-label="Student Performance home">
+        <span class="brand-mark">SP</span>
+        <span><strong>Student<br>Performance</strong><small>ML project dashboard</small></span>
+      </a>
+      <div class="sidebar-rule"></div>
+      <p class="nav-label">Choose a project lens</p>
+      <nav class="main-nav" aria-label="Project lenses">
+        <a class="nav-link" href="index.html#overview"><span>01</span><b>Prediction lens</b></a>
+        <a class="nav-link active" href="#profiles"><span>02</span><b>Intervention lens</b></a>
+      </nav>
+      <div class="lens-summary"><span class="lens-dot"></span><strong>Descriptive profiling</strong><p>Cross-subject evidence for human-led support planning.</p></div>
+      <div class="sidebar-bottom">
+        <div class="status-pill"><i></i> Intervention lens</div>
+        <p>IT3091 · Student Performance Dataset</p>
+      </div>
+    </aside>
+    <main class="content">
+      <header class="topbar">
+        <div class="breadcrumb"><span>IT3091 / Machine Learning</span><b>/</b><strong>Intervention profiles</strong></div>
+        <div class="topbar-actions"><span class="data-badge">Math + Portuguese · 382 matched records</span><button class="menu-toggle" aria-label="Open menu">☰</button></div>
+      </header>
+      <section id="profiles" class="page-section intervention-hero">
+        <div class="eyebrow"><span class="eyebrow-line"></span> 02 / INTERVENTION GROUP PROFILING</div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1>Turn evidence into<br><em>support conversations.</em></h1>
+            <p class="hero-lead">This separate descriptive lens compares matched Mathematics and Portuguese records to help educators prioritise human review without treating a profile as a diagnosis.</p>
+            <div class="decision-callout"><span class="callout-icon">↗</span><div><strong>The decision</strong><p>Use profiles to ask better support questions — never to grade, exclude or discipline a student automatically.</p></div></div>
+            <a class="back-link" href="index.html#overview">← Back to prediction lens</a>
+          </div>
+          <div class="profile-hero-card">
+            <span class="panel-kicker">MATCHED RECORDS</span>
+            <strong>382</strong>
+            <p>from 395 Mathematics and 649 Portuguese records</p>
+            <div class="profile-mini-stats"><span><b>5</b><small>profiles</small></span><span><b>&lt; 10</b><small>screening threshold</small></span></div>
+          </div>
+        </div>
+        <div class="section-heading"><div><span class="eyebrow">THE BIG PICTURE</span><h2>Five transparent support groups</h2></div><p>Profiles are assigned in a fixed order using final-grade outcomes and observable risk signals.</p></div>
+        <div class="metric-grid profile-metrics">
+          <article class="metric-card"><span class="metric-label">BOTH SUBJECTS</span><strong>23</strong><p>Low final outcomes in Math and Portuguese</p><span class="metric-accent accent-coral"></span></article>
+          <article class="metric-card"><span class="metric-label">MATH SUPPORT</span><strong>104</strong><p>Low Math outcome with Portuguese outcome above threshold</p><span class="metric-accent accent-teal"></span></article>
+          <article class="metric-card"><span class="metric-label">EMERGING SIGNALS</span><strong>107</strong><p>Monitor for failures, absences or weak progression</p><span class="metric-accent accent-yellow"></span></article>
+          <article class="metric-card"><span class="metric-label">CURRENTLY STABLE</span><strong>139</strong><p>No configured screening signal present</p><span class="metric-accent accent-purple"></span></article>
+        </div>
+      </section>
+      <section class="page-section tinted-section">
+        <div class="section-heading section-heading-wide"><div><div class="eyebrow"><span class="eyebrow-line"></span> PROFILE EVIDENCE</div><h2>Where should review begin?</h2></div><p>The charts show group size, cross-subject outcomes and the distribution behind each profile.</p></div>
+        <div class="decision-callout profile-warning"><span class="callout-icon">!</span><div><strong>Data-quality note</strong><p>The merge follows the supplied R key. It is not a unique student ID, so these are matched records for review, not verified identities.</p></div></div>
+        <div class="visual-grid">
+          <article class="panel visual-card"><div class="panel-header"><div><span class="panel-kicker">PROFILE COUNTS</span><h3>Group sizes at a glance</h3></div><span class="audit-badge">n = 382</span></div><img src="../intervention-group-profiling/outputs/intervention_profile_counts.png" alt="Counts of intervention profiles"><p class="chart-caption"><strong>Insight:</strong> Mathematics-specific support is the largest priority group; 23 matched records show low outcomes in both subjects.</p></article>
+          <article class="panel visual-card"><div class="panel-header"><div><span class="panel-kicker">CROSS-SUBJECT EVIDENCE</span><h3>Low-grade outcome quadrants</h3></div></div><img src="../intervention-group-profiling/outputs/cross_subject_risk_quadrants.png" alt="Mathematics and Portuguese grade risk quadrants"><p class="chart-caption"><strong>Rule:</strong> Dashed lines mark the transparent G3 &lt; 10 threshold. This is a screening view, not a diagnosis.</p></article>
+          <article class="panel visual-card"><div class="panel-header"><div><span class="panel-kicker">GROUP COMPARISON</span><h3>Grade distributions by profile</h3></div></div><img src="../intervention-group-profiling/outputs/profile_grade_distributions.png" alt="Grade distributions within intervention profiles"><p class="chart-caption"><strong>Use carefully:</strong> A profile starts a conversation about support; it does not establish a cause.</p></article>
+        </div>
+      </section>
+      <section class="page-section">
+        <div class="section-heading section-heading-wide"><div><div class="eyebrow"><span class="eyebrow-line"></span> UNSUPERVISED ML CHECK</div><h2>Do natural similarity groups support the lens?</h2></div><p>We compared three clustering families, then interpreted the selected groups without using final grades to create them.</p></div>
+        <div class="model-layout cluster-layout">
+          <article class="panel cluster-highlight"><span class="panel-kicker">SELECTED CONFIGURATION</span><h3>K-Means · k = 2</h3><div class="score-main">0.215 <small>silhouette</small></div><p class="chart-caption"><strong>Why selected?</strong> It had the highest valid silhouette score among the tested K-Means, hierarchical and DBSCAN configurations.</p><div class="cluster-stat-row"><span><b>241</b><small>cluster 0</small></span><span><b>141</b><small>cluster 1</small></span></div></article>
+          <article class="panel visual-card"><div class="panel-header"><div><span class="panel-kicker">CLUSTER VISUALISATION</span><h3>Selected groups in PCA space</h3></div><span class="chart-note">G3 excluded from clustering</span></div><img src="../intervention-group-profiling/outputs/cluster_pca_visualization.png" alt="Selected student clusters projected into two PCA dimensions"><p class="chart-caption"><strong>Interpretation:</strong> Cluster 1 has lower average grades and more failures/absences, but cluster labels are exploratory and not rankings.</p></article>
+        </div>
+        <div class="algorithm-strip"><div><strong>K-Means</strong><span>Centroid groups · tested k = 2–6</span></div><div><strong>Hierarchical</strong><span>Ward similarity tree · tested k = 2–6</span></div><div><strong>DBSCAN</strong><span>Density groups · noise detection</span></div></div>
+        <p class="chart-caption cluster-note"><strong>Method note:</strong> Clustering used standardised age, attendance, study time, failures and G1/G2 progression features. `G3` was not used to form clusters; it was used only to describe the groups afterwards.</p>
+      </section>
+      <section class="page-section tinted-section">
+        <div class="section-heading section-heading-wide"><div><div class="eyebrow"><span class="eyebrow-line"></span> CLUSTER QUALITY &amp; INTERPRETATION</div><h2>Evidence behind the grouping</h2></div><p>These diagnostics show why the clustering result is usable as exploratory evidence, while keeping its limitations visible.</p></div>
+        <div class="visual-grid cluster-visual-grid">
+          <article class="panel visual-card"><div class="panel-header"><div><span class="panel-kicker">ALGORITHM COMPARISON</span><h3>Separation across configurations</h3></div><span class="chart-note">Silhouette · higher is better</span></div><img src="../intervention-group-profiling/outputs/clustering_algorithm_comparison.png" alt="Silhouette scores for clustering configurations"><p class="chart-caption"><strong>Selection:</strong> K-Means k=2 had the strongest valid score among the tested configurations.</p></article>
+          <article class="panel visual-card"><div class="panel-header"><div><span class="panel-kicker">FEATURE INTERPRETATION</span><h3>How clusters differ</h3></div></div><img src="../intervention-group-profiling/outputs/cluster_feature_heatmap.png" alt="Standardised feature profiles by cluster"><p class="chart-caption"><strong>Reading the heatmap:</strong> Values show relative group means, not causal effects or student rankings.</p></article>
+          <article class="panel visual-card"><div class="panel-header"><div><span class="panel-kicker">GROUP BALANCE</span><h3>Cluster sizes are visible</h3></div></div><img src="../intervention-group-profiling/outputs/cluster_sizes.png" alt="Number of records assigned to each cluster"><p class="chart-caption"><strong>Audit:</strong> Both selected clusters are large enough to inspect; small clusters would need extra caution.</p></article>
+        </div>
+        <div class="decision-callout profile-warning"><span class="callout-icon">✓</span><div><strong>Stability check passed</strong><p>The selected K-Means assignments were repeated with 10 seeds. Mean Adjusted Rand Index ≈ 0.989 and minimum ≈ 0.979, indicating stable assignments for this data and feature policy.</p></div></div>
+      </section>
+      <section class="page-section">
+        <div class="section-heading section-heading-wide"><div><div class="eyebrow"><span class="eyebrow-line"></span> FROM SIGNAL TO SUPPORT</div><h2>Keep the human in the loop</h2></div><p>A responsible workflow turns a pattern into context-aware support rather than an automatic label.</p></div>
+        <div class="next-steps profile-steps">
+          <div><span class="step-number">01</span><strong>Review the evidence</strong><p>Check the profile, grades, progression and attendance context together.</p></div>
+          <div><span class="step-number">02</span><strong>Talk with the student</strong><p>Confirm current circumstances with a teacher, counsellor and student.</p></div>
+          <div><span class="step-number">03</span><strong>Offer proportionate support</strong><p>Consider tutoring, study planning, attendance or wellbeing support.</p></div>
+        </div>
+        <div class="footnote"><span>LIMITATIONS</span> Historical cross-sectional data · Merge key is not a unique ID · Thresholds are project screening choices · No profile should drive grading, exclusion or discipline</div>
+      </section>
+      <footer><span>Student Performance Prediction · IT3091 Machine Learning</span><span><a href="index.html">Prediction lens</a> · <strong>Intervention lens</strong></span></footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

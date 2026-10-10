@@ -1,0 +1,383 @@
+school,sex,age,G3_math,G3_portuguese,G2_math,G2_portuguese,failures_math,failures_portuguese,absences_math,absences_portuguese,math_portuguese_grade_gap,math_low_outcome,portuguese_low_outcome,previous_failure_signal,high_absence_signal,profile
+GP,F,18,6,11,6,11,0,0,6,4,-5,True,False,False,False,Priority: Mathematics-specific support
+GP,F,17,6,11,5,11,0,0,4,2,-5,True,False,False,False,Priority: Mathematics-specific support
+GP,F,15,10,12,8,13,3,0,10,6,-2,False,False,True,True,Monitor: emerging risk signals
+GP,F,15,15,14,14,14,0,0,2,0,1,False,False,False,False,Monitor: currently stable
+GP,F,16,10,13,10,13,0,0,4,0,-3,False,False,False,False,Monitor: currently stable
+GP,M,16,15,13,15,12,0,0,10,6,2,False,False,False,True,Monitor: emerging risk signals
+GP,M,16,11,13,12,12,0,0,0,0,-2,False,False,False,False,Monitor: currently stable
+GP,F,17,6,13,5,13,0,0,6,2,-7,True,False,False,False,Priority: Mathematics-specific support
+GP,M,15,19,17,18,16,0,0,0,0,2,False,False,False,False,Monitor: currently stable
+GP,M,15,15,13,15,12,0,0,0,0,2,False,False,False,False,Monitor: currently stable
+GP,F,15,9,14,8,14,0,0,0,2,-5,True,False,False,False,Priority: Mathematics-specific support
+GP,F,15,12,13,12,12,0,0,4,0,-1,False,False,False,False,Monitor: currently stable
+GP,M,15,14,12,14,13,0,0,2,0,2,False,False,False,False,Monitor: currently stable
+GP,M,15,11,13,10,12,0,0,2,0,-2,False,False,False,False,Monitor: currently stable
+GP,M,15,16,15,16,14,0,0,0,0,1,False,False,False,False,Monitor: currently stable
+GP,F,16,14,17,14,17,0,0,4,6,-3,False,False,False,True,Monitor: emerging risk signals
+GP,F,16,14,14,14,13,0,0,6,10,0,False,False,False,True,Monitor: emerging risk signals
+GP,F,16,10,14,10,14,0,0,4,2,-4,False,False,False,False,Monitor: currently stable
+GP,M,17,5,7,5,8,3,3,16,2,-2,True,True,True,True,Priority: low outcomes in both subjects
+GP,M,16,10,12,10,12,0,0,4,6,-2,False,False,False,True,Monitor: emerging risk signals
+GP,M,15,15,14,14,13,0,0,0,0,1,False,False,False,False,Monitor: currently stable
+GP,M,15,15,12,15,12,0,0,0,0,3,False,False,False,False,Monitor: currently stable
+GP,M,16,16,14,15,13,0,0,2,0,2,False,False,False,False,Monitor: currently stable
+GP,M,16,12,10,13,10,0,0,0,2,2,False,False,False,False,Monitor: currently stable
+GP,F,15,8,10,9,11,0,0,2,2,-2,True,False,False,False,Priority: Mathematics-specific support
+GP,F,16,8,12,9,11,2,0,14,6,-4,True,False,True,True,Priority: Mathematics-specific support
+GP,M,15,11,12,12,12,0,0,2,8,-1,False,False,False,True,Monitor: emerging risk signals
+GP,M,15,15,11,16,11,0,0,4,0,4,False,False,False,False,Monitor: currently stable
+GP,M,16,11,13,11,12,0,0,4,2,-2,False,False,False,False,Monitor: currently stable
+GP,M,16,11,12,12,11,0,0,16,4,-1,False,False,False,True,Monitor: emerging risk signals
+GP,M,15,12,11,11,11,0,0,0,0,1,False,False,False,False,Monitor: currently stable
+GP,M,15,17,15,16,15,0,0,0,2,2,False,False,False,False,Monitor: currently stable
+GP,M,15,16,15,16,14,0,0,0,0,1,False,False,False,False,Monitor: currently stable
+GP,M,15,12,12,10,12,0,0,0,0,0,False,False,False,False,Monitor: currently stable
+GP,M,16,15,12,14,12,0,0,0,4,3,False,False,False,False,Monitor: currently stable
+GP,F,15,6,11,7,11,0,0,0,4,-5,True,False,False,False,Priority: Mathematics-specific support
+GP,M,15,18,14,16,14,0,0,2,0,4,False,False,False,False,Monitor: currently stable
+GP,M,16,15,13,16,13,0,0,7,4,2,False,False,False,False,Monitor: currently stable
+GP,F,15,11,12,12,12,0,0,2,2,-1,False,False,False,False,Monitor: currently stable
+GP,F,15,13,12,13,13,0,0,8,8,1,False,False,False,True,Monitor: emerging risk signals
+GP,F,16,11,10,10,11,1,0,25,16,1,False,False,True,True,Monitor: emerging risk signals
+GP,M,15,12,11,12,11,0,0,8,8,1,False,False,False,True,Monitor: emerging risk signals
+GP,M,15,18,15,18,15,0,0,2,0,3,False,False,False,False,Monitor: currently stable
+GP,M,15,11,10,8,10,0,0,0,0,1,False,False,False,False,Monitor: emerging risk signals
+GP,F,16,9,11,10,11,1,1,14,14,-2,True,False,True,True,Priority: Mathematics-specific support
+GP,F,15,6,11,8,11,0,0,8,4,-5,True,False,False,True,Priority: Mathematics-specific support
+GP,F,16,11,13,12,12,0,0,12,6,-2,False,False,False,True,Monitor: emerging risk signals
+GP,M,16,20,17,19,17,0,0,4,2,3,False,False,False,False,Monitor: currently stable
+GP,M,15,14,13,15,12,0,0,2,4,1,False,False,False,False,Monitor: currently stable
+GP,F,15,7,12,7,12,1,0,2,2,-5,True,False,True,False,Priority: Mathematics-specific support
+GP,F,16,13,13,13,13,0,0,2,0,0,False,False,False,False,Monitor: currently stable
+GP,F,15,13,16,13,14,0,0,2,0,-3,False,False,False,False,Monitor: currently stable
+GP,M,15,10,9,11,9,1,0,6,4,1,False,True,True,False,Priority: Portuguese-specific support
+GP,F,15,11,12,10,12,0,0,0,0,-1,False,False,False,False,Monitor: currently stable
+GP,F,15,13,13,13,12,0,0,6,0,0,False,False,False,False,Monitor: currently stable
+GP,F,16,10,12,9,13,0,0,8,2,-2,False,False,False,True,Monitor: emerging risk signals
+GP,F,15,15,15,15,14,0,0,0,0,0,False,False,False,False,Monitor: currently stable
+GP,M,15,15,16,15,15,0,0,4,8,-1,False,False,False,True,Monitor: emerging risk signals
+GP,M,15,9,14,10,13,0,0,2,0,-5,True,False,False,False,Priority: Mathematics-specific support
+GP,F,16,16,16,16,15,0,0,2,2,0,False,False,False,False,Monitor: currently stable
+GP,F,16,11,16,11,16,0,0,6,0,-5,False,False,False,False,Monitor: currently stable
+GP,F,16,11,16,8,10,0,0,6,0,-5,False,False,False,False,Monitor: emerging risk signals
+GP,F,16,9,10,10,13,0,0,4,0,-1,True,False,False,False,Priority: Mathematics-specific support
+GP,F,16,9,13,9,13,0,0,2,0,-4,True,False,False,False,Priority: Mathematics-specific support
+GP,F,15,10,12,10,12,0,0,0,0,-2,False,False,False,False,Monitor: currently stable
+GP,F,16,15,16,15,15,0,0,2,2,-1,False,False,False,False,Monitor: currently stable
+GP,M,15,12,12,13,12,0,0,4,0,0,False,False,False,False,Monitor: currently stable
+GP,F,16,6,10,7,9,0,0,4,0,-4,True,False,False,False,Priority: Mathematics-specific support
+GP,F,15,8,11,9,10,0,0,2,0,-3,True,False,False,False,Priority: Mathematics-specific support
+GP,F,15,16,15,16,15,0,0,12,6,1,False,False,False,True,Monitor: emerging risk signals
+GP,M,16,15,11,15,11,0,0,0,2,4,False,False,False,False,Monitor: currently stable
+GP,M,15,10,10,10,9,0,0,0,0,0,False,False,False,False,Monitor: emerging risk signals
+GP,F,15,5,11,6,11,2,0,2,2,-6,True,False,True,False,Priority: Mathematics-specific support
+GP,M,16,14,14,12,13,0,0,2,0,0,False,False,False,False,Monitor: currently stable
+GP,F,16,11,11,12,11,0,0,54,4,0,False,False,False,True,Monitor: emerging risk signals
+GP,M,15,10,11,9,11,0,0,6,0,-1,False,False,False,False,Monitor: emerging risk signals
+GP,M,15,10,11,11,11,0,0,8,0,-1,False,False,False,True,Monitor: emerging risk signals
+GP,F,16,11,13,11,13,0,0,0,1,-2,False,False,False,False,Monitor: currently stable
+GP,M,17,10,10,8,9,3,3,2,0,0,False,False,True,False,Monitor: emerging risk signals
+GP,M,17,10,6,8,7,3,0,2,22,4,False,True,True,True,Priority: Portuguese-specific support
+GP,F,16,5,11,5,11,0,0,12,14,-6,True,False,False,True,Priority: Mathematics-specific support
+GP,M,15,12,12,12,11,0,0,2,0,0,False,False,False,False,Monitor: currently stable
+GP,M,15,11,9,10,9,0,0,4,2,2,False,True,False,False,Priority: Portuguese-specific support
+GP,F,15,6,11,6,11,0,0,10,4,-5,True,False,False,True,Priority: Mathematics-specific support
+GP,M,15,15,13,15,12,0,0,4,2,2,False,False,False,False,Monitor: currently stable
+GP,F,15,10,12,10,12,0,0,2,2,-2,False,False,False,False,Monitor: currently stable
+GP,F,15,8,12,9,11,2,0,6,4,-4,True,False,True,False,Priority: Mathematics-specific support
+GP,F,16,6,11,7,11,0,0,4,6,-5,True,False,False,True,Priority: Mathematics-specific support
+GP,F,15,14,15,14,15,0,0,4,4,-1,False,False,False,False,Monitor: currently stable
+GP,M,16,10,11,10,10,1,0,12,6,-1,False,False,True,True,Monitor: emerging risk signals
+GP,M,16,7,10,6,9,0,0,18,6,-3,True,False,False,True,Priority: Mathematics-specific support
+GP,F,16,8,11,7,11,0,0,0,2,-3,True,False,False,False,Priority: Mathematics-specific support
+GP,F,15,18,13,17,13,0,0,4,6,5,False,False,False,True,Monitor: emerging risk signals
+GP,F,16,6,12,6,13,0,0,4,0,-6,True,False,False,False,Priority: Mathematics-specific support
+GP,F,16,10,14,10,14,0,0,0,2,-4,False,False,False,False,Monitor: currently stable
+GP,M,15,14,12,13,12,0,0,6,2,2,False,False,False,False,Monitor: currently stable
+GP,F,15,10,13,10,13,1,0,2,4,-3,False,False,True,False,Monitor: emerging risk signals
+GP,M,16,15,11,15,11,0,0,2,6,4,False,False,False,True,Monitor: emerging risk signals
+GP,F,16,10,12,9,12,0,0,2,0,-2,False,False,False,False,Monitor: emerging risk signals
+GP,F,16,14,13,14,13,0,0,6,4,1,False,False,False,False,Monitor: currently stable
+GP,F,16,8,13,9,13,0,0,0,2,-5,True,False,False,False,Priority: Mathematics-specific support
+GP,M,16,5,8,7,9,0,0,14,12,-3,True,True,False,True,Priority: low outcomes in both subjects
+GP,M,16,17,16,17,16,0,0,0,0,1,False,False,False,False,Monitor: currently stable
+GP,M,15,14,12,13,13,0,0,4,2,2,False,False,False,False,Monitor: currently stable
+GP,F,15,6,10,6,10,0,0,26,16,-4,True,False,False,True,Priority: Mathematics-specific support
+GP,M,15,18,16,18,16,0,0,0,0,2,False,False,False,False,Monitor: currently stable
+GP,F,15,11,10,11,10,0,0,10,10,1,False,False,False,True,Monitor: emerging risk signals
+GP,F,15,8,10,8,10,0,0,8,4,-2,True,False,False,True,Priority: Mathematics-specific support
+GP,M,16,18,14,18,14,0,0,2,4,4,False,False,False,False,Monitor: currently stable
+GP,M,16,18,13,18,12,0,0,2,0,5,False,False,False,False,Monitor: currently stable
+GP,M,15,13,11,13,10,0,0,6,8,2,False,False,False,True,Monitor: emerging risk signals
+GP,F,16,16,14,15,15,0,0,4,2,2,False,False,False,False,Monitor: currently stable
+GP,M,15,19,14,19,14,0,0,6,4,5,False,False,False,False,Monitor: currently stable
+GP,F,16,10,11,10,11,1,0,0,4,-1,False,False,True,False,Monitor: emerging risk signals
+GP,F,16,13,10,13,10,1,1,6,12,3,False,False,True,True,Monitor: emerging risk signals
+GP,M,15,19,18,19,17,0,0,10,10,1,False,False,False,True,Monitor: emerging risk signals
+GP,M,15,9,10,9,9,0,0,8,4,-1,True,False,False,True,Priority: Mathematics-specific support
+GP,M,16,16,14,15,14,0,0,2,6,2,False,False,False,True,Monitor: emerging risk signals
+GP,M,16,16,8,15,9,0,0,2,16,8,False,True,False,True,Priority: Portuguese-specific support
+GP,M,15,14,16,13,15,0,0,2,4,-2,False,False,False,False,Monitor: currently stable
+GP,M,16,13,15,14,14,0,0,0,6,-2,False,False,False,True,Monitor: emerging risk signals
+GP,M,17,8,11,7,11,1,1,20,14,-3,True,False,True,True,Priority: Mathematics-specific support
+GP,M,15,13,14,13,13,0,0,6,2,-1,False,False,False,False,Monitor: currently stable
+GP,F,15,15,14,15,14,0,0,2,0,1,False,False,False,False,Monitor: currently stable
+GP,M,15,15,13,14,13,0,0,6,6,2,False,False,False,True,Monitor: emerging risk signals
+GP,F,16,13,13,13,12,0,0,2,2,0,False,False,False,False,Monitor: currently stable
+GP,M,16,13,13,11,13,0,0,18,4,0,False,False,False,True,Monitor: emerging risk signals
+GP,F,16,8,11,7,11,0,0,0,0,-3,True,False,False,False,Priority: Mathematics-specific support
+GP,M,15,12,9,13,9,0,0,0,2,3,False,True,False,False,Priority: Portuguese-specific support
+GP,F,15,11,11,10,11,0,0,0,0,0,False,False,False,False,Monitor: currently stable
+GP,F,19,9,11,8,10,3,2,2,0,-2,True,False,True,False,Priority: Mathematics-specific support
+GP,M,16,18,15,18,14,0,0,8,8,3,False,False,False,True,Monitor: emerging risk signals
+GP,F,15,0,12,0,11,2,0,0,0,-12,True,False,True,False,Priority: Mathematics-specific support
+GP,F,15,0,13,0,12,0,0,0,6,-13,True,False,False,True,Priority: Mathematics-specific support
+GP,F,17,12,12,13,12,0,0,12,2,0,False,False,False,True,Monitor: emerging risk signals
+GP,F,16,11,14,11,13,0,0,16,12,-3,False,False,False,True,Monitor: emerging risk signals
+GP,M,15,0,11,0,11,0,0,0,2,-11,True,False,False,False,Priority: Mathematics-specific support
+GP,F,15,0,15,0,14,0,0,0,4,-15,True,False,False,False,Priority: Mathematics-specific support
+GP,M,17,0,10,0,9,0,0,0,2,-10,True,False,False,False,Priority: Mathematics-specific support
+GP,F,16,0,10,0,9,2,0,0,4,-10,True,False,True,False,Priority: Mathematics-specific support
+GP,M,16,12,10,12,10,1,2,0,0,2,False,False,True,False,Monitor: emerging risk signals
+GP,F,15,15,14,16,14,0,0,0,6,1,False,False,False,True,Monitor: emerging risk signals
+GP,M,15,0,11,9,11,0,0,0,6,-11,True,False,False,True,Priority: Mathematics-specific support
+GP,M,16,9,11,9,11,2,0,8,4,-2,True,False,True,True,Priority: Mathematics-specific support
+GP,F,15,11,13,11,13,0,0,2,2,-2,False,False,False,False,Monitor: currently stable
+GP,F,16,13,11,14,11,0,0,2,4,2,False,False,False,False,Monitor: currently stable
+GP,M,17,0,10,0,9,3,3,0,0,-10,True,False,True,False,Priority: Mathematics-specific support
+GP,M,17,0,6,0,7,3,0,0,22,-6,True,True,True,True,Priority: low outcomes in both subjects
+GP,F,15,11,12,11,12,0,0,0,0,-1,False,False,False,False,Monitor: currently stable
+GP,F,15,0,11,7,11,3,1,0,2,-11,True,False,True,False,Priority: Mathematics-specific support
+GP,F,15,11,13,11,12,0,0,2,6,-2,False,False,False,True,Monitor: emerging risk signals
+GP,M,16,0,14,6,14,0,0,0,6,-14,True,False,False,True,Priority: Mathematics-specific support
+GP,M,16,0,8,6,9,0,0,0,16,-8,True,True,False,True,Priority: low outcomes in both subjects
+GP,M,15,10,11,9,11,3,0,0,0,-1,False,False,True,False,Monitor: emerging risk signals
+GP,M,18,0,0,5,9,3,2,0,0,0,True,True,True,False,Priority: low outcomes in both subjects
+GP,M,16,14,10,13,10,1,1,6,6,4,False,False,True,True,Monitor: emerging risk signals
+GP,F,15,10,13,10,13,2,0,8,2,-3,False,False,True,True,Monitor: emerging risk signals
+GP,M,19,0,11,0,9,3,0,0,6,-11,True,False,True,True,Priority: Mathematics-specific support
+GP,F,17,12,13,11,13,0,0,0,0,-1,False,False,False,False,Monitor: currently stable
+GP,M,15,8,8,8,8,0,0,2,0,0,True,True,False,False,Priority: low outcomes in both subjects
+GP,M,17,13,10,12,8,0,3,8,14,3,False,False,True,True,Monitor: emerging risk signals
+GP,F,18,10,11,8,10,3,3,6,6,-1,False,False,True,True,Monitor: emerging risk signals
+GP,M,16,15,11,15,10,0,0,2,4,4,False,False,False,False,Monitor: currently stable
+GP,M,16,12,1,12,10,1,1,4,0,11,False,True,True,False,Priority: Portuguese-specific support
+GP,M,17,0,9,6,8,2,1,0,8,-9,True,True,True,True,Priority: low outcomes in both subjects
+GP,M,17,7,8,8,8,3,0,0,0,-1,True,True,True,False,Priority: low outcomes in both subjects
+GP,M,16,10,11,10,10,0,0,4,0,-1,False,False,False,False,Monitor: currently stable
+GP,F,16,16,18,15,17,0,0,0,0,-2,False,False,False,False,Monitor: currently stable
+GP,F,16,0,13,7,12,0,0,0,0,-13,True,False,False,False,Priority: Mathematics-specific support
+GP,F,16,14,17,14,16,0,0,0,0,-3,False,False,False,False,Monitor: currently stable
+GP,M,16,0,10,5,9,2,1,0,4,-10,True,False,True,False,Priority: Mathematics-specific support
+GP,M,16,16,18,15,17,0,0,2,0,-2,False,False,False,False,Monitor: currently stable
+GP,M,17,10,10,11,9,0,0,0,0,0,False,False,False,False,Monitor: emerging risk signals
+GP,F,16,0,13,7,13,3,0,0,0,-13,True,False,True,False,Priority: Mathematics-specific support
+GP,F,16,9,15,11,14,0,0,4,0,-6,True,False,False,False,Priority: Mathematics-specific support
+GP,M,17,9,11,9,11,0,0,4,0,-2,True,False,False,False,Priority: Mathematics-specific support
+GP,F,16,11,14,13,12,0,0,2,0,-3,False,False,False,False,Monitor: currently stable
+GP,M,17,6,10,5,9,0,0,4,4,-4,True,False,False,False,Priority: Mathematics-specific support
+GP,M,16,9,11,8,9,0,0,10,8,-2,True,False,False,True,Priority: Mathematics-specific support
+GP,M,17,11,13,10,11,0,0,4,4,-2,False,False,False,False,Monitor: currently stable
+GP,M,16,8,11,8,10,0,0,10,4,-3,True,False,False,True,Priority: Mathematics-specific support
+GP,M,16,12,14,13,14,0,0,2,4,-2,False,False,False,False,Monitor: currently stable
+GP,M,16,12,13,13,12,0,0,2,0,-1,False,False,False,False,Monitor: currently stable
+GP,F,17,17,17,17,18,0,0,0,0,0,False,False,False,False,Monitor: currently stable
+GP,F,17,8,14,9,13,0,0,56,32,-6,True,False,False,True,Priority: Mathematics-specific support
+GP,F,16,12,16,13,15,0,0,14,8,-4,False,False,False,True,Monitor: emerging risk signals
+GP,M,17,11,14,12,13,0,0,12,6,-3,False,False,False,True,Monitor: emerging risk signals
+GP,M,16,11,11,12,9,0,0,2,0,0,False,False,False,False,Monitor: emerging risk signals
+GP,M,16,15,16,15,14,0,0,0,0,-1,False,False,False,False,Monitor: currently stable
+GP,F,17,9,14,7,13,0,0,6,10,-5,True,False,False,True,Priority: Mathematics-specific support
+GP,M,17,10,10,9,9,0,0,4,6,0,False,False,False,True,Monitor: emerging risk signals
+GP,F,16,13,13,12,12,0,0,10,6,0,False,False,False,True,Monitor: emerging risk signals
+GP,F,17,9,12,8,11,0,0,0,0,-3,True,False,False,False,Priority: Mathematics-specific support
+GP,M,17,8,12,8,11,0,0,12,16,-4,True,False,False,True,Priority: Mathematics-specific support
+GP,M,16,10,10,9,10,0,0,8,0,0,False,False,False,True,Monitor: emerging risk signals
+GP,M,16,14,12,14,12,0,0,0,0,2,False,False,False,False,Monitor: currently stable
+GP,F,17,15,16,15,15,0,0,0,8,-1,False,False,False,True,Monitor: emerging risk signals
+GP,M,17,16,14,15,13,0,0,4,4,2,False,False,False,False,Monitor: currently stable
+GP,M,16,10,12,9,11,0,0,8,16,-2,False,False,False,True,Monitor: emerging risk signals
+GP,F,17,18,16,18,15,1,1,24,30,2,False,False,True,True,Monitor: emerging risk signals
+GP,F,16,10,11,9,10,0,0,0,0,-1,False,False,False,False,Monitor: emerging risk signals
+GP,F,16,16,15,16,14,0,0,2,2,1,False,False,False,False,Monitor: currently stable
+GP,F,16,10,12,10,12,0,0,6,4,-2,False,False,False,False,Monitor: currently stable
+GP,F,17,10,15,9,15,0,0,4,0,-5,False,False,False,False,Monitor: emerging risk signals
+GP,F,17,6,13,6,13,0,0,18,21,-7,True,False,False,True,Priority: Mathematics-specific support
+GP,F,16,11,13,10,13,0,0,6,6,-2,False,False,False,True,Monitor: emerging risk signals
+GP,F,17,9,8,9,9,1,1,28,14,1,True,True,True,True,Priority: low outcomes in both subjects
+GP,F,16,7,12,7,11,3,0,5,2,-5,True,False,True,False,Priority: Mathematics-specific support
+GP,F,16,13,15,12,15,0,0,10,4,-2,False,False,False,True,Monitor: emerging risk signals
+GP,F,16,10,13,9,13,0,0,6,2,-3,False,False,False,False,Monitor: emerging risk signals
+GP,F,17,7,12,7,12,0,0,6,0,-5,True,False,False,False,Priority: Mathematics-specific support
+GP,F,19,8,12,8,12,0,0,10,4,-4,True,False,False,True,Priority: Mathematics-specific support
+GP,M,17,13,12,12,12,0,0,13,15,1,False,False,False,True,Monitor: emerging risk signals
+GP,F,16,14,13,13,13,0,0,0,0,1,False,False,False,False,Monitor: currently stable
+GP,M,18,8,11,7,11,1,0,15,10,-3,True,False,True,True,Priority: Mathematics-specific support
+GP,F,17,10,11,10,11,0,0,12,6,-1,False,False,False,True,Monitor: emerging risk signals
+GP,F,17,15,15,15,16,0,0,2,2,0,False,False,False,False,Monitor: currently stable
+GP,F,17,4,10,6,9,2,0,22,16,-6,True,False,True,True,Priority: Mathematics-specific support
+GP,M,18,8,10,6,10,1,0,13,10,-2,True,False,True,True,Priority: Mathematics-specific support
+GP,F,17,8,13,7,13,0,0,3,4,-5,True,False,False,False,Priority: Mathematics-specific support
+GP,F,17,10,13,10,12,0,0,4,0,-3,False,False,False,False,Monitor: currently stable
+GP,F,17,6,11,6,10,0,0,2,0,-5,True,False,False,False,Priority: Mathematics-specific support
+GP,F,17,0,12,5,12,1,0,0,12,-12,True,False,True,True,Priority: Mathematics-specific support
+GP,F,16,17,14,16,13,0,0,2,0,3,False,False,False,False,Monitor: currently stable
+GP,M,18,13,10,13,9,0,3,0,9,3,False,False,True,True,Monitor: emerging risk signals
+GP,F,16,14,16,13,16,0,0,0,4,-2,False,False,False,False,Monitor: currently stable
+GP,F,18,7,8,8,8,1,0,16,4,-1,True,True,True,True,Priority: low outcomes in both subjects
+GP,F,17,15,17,15,18,0,0,10,2,-2,False,False,False,True,Monitor: emerging risk signals
+GP,M,17,12,11,11,11,0,0,2,0,1,False,False,False,False,Monitor: currently stable
+GP,M,18,9,11,8,10,0,0,14,2,-2,True,False,False,True,Priority: Mathematics-specific support
+GP,F,17,12,16,10,15,0,0,10,0,-4,False,False,False,True,Monitor: emerging risk signals
+GP,F,17,14,12,13,12,0,0,14,0,2,False,False,False,True,Monitor: emerging risk signals
+GP,M,17,11,13,11,13,0,0,4,0,-2,False,False,False,False,Monitor: currently stable
+GP,M,17,9,13,9,13,0,0,14,0,-4,True,False,False,True,Priority: Mathematics-specific support
+GP,M,16,13,14,13,13,0,0,2,0,-1,False,False,False,False,Monitor: currently stable
+GP,M,16,6,9,7,9,0,0,18,2,-3,True,True,False,True,Priority: low outcomes in both subjects
+GP,M,16,10,12,9,12,0,0,10,0,-2,False,False,False,True,Monitor: emerging risk signals
+GP,M,17,13,16,13,16,0,0,4,0,-3,False,False,False,False,Monitor: currently stable
+GP,F,16,12,10,12,10,0,0,20,4,2,False,False,False,True,Monitor: emerging risk signals
+GP,F,17,11,13,11,13,0,0,2,2,-2,False,False,False,False,Monitor: currently stable
+GP,M,18,0,8,7,7,1,0,0,16,-8,True,True,True,True,Priority: low outcomes in both subjects
+GP,M,17,12,15,12,15,0,0,14,8,-3,False,False,False,True,Monitor: emerging risk signals
+GP,M,17,12,12,11,12,0,0,2,0,0,False,False,False,False,Monitor: currently stable
+GP,M,16,0,15,0,14,0,0,0,7,-15,True,False,False,True,Priority: Mathematics-specific support
+GP,M,16,12,13,12,13,0,0,0,0,-1,False,False,False,False,Monitor: currently stable
+GP,M,16,12,15,12,15,0,0,0,4,-3,False,False,False,False,Monitor: currently stable
+GP,F,18,0,11,0,10,0,0,0,10,-11,True,False,False,True,Priority: Mathematics-specific support
+GP,M,16,18,16,18,16,0,0,6,7,2,False,False,False,True,Monitor: emerging risk signals
+GP,M,17,13,13,12,12,0,0,4,2,0,False,False,False,False,Monitor: currently stable
+GP,M,22,8,5,8,8,3,3,16,12,3,True,True,True,True,Priority: low outcomes in both subjects
+GP,M,18,5,10,5,9,1,0,8,8,-5,True,False,True,True,Priority: Mathematics-specific support
+GP,M,16,15,11,15,12,0,0,0,0,4,False,False,False,False,Monitor: currently stable
+GP,M,18,8,7,8,8,1,0,0,8,1,True,True,True,True,Priority: low outcomes in both subjects
+GP,M,16,10,10,10,11,0,1,6,4,0,False,False,True,False,Monitor: emerging risk signals
+GP,M,18,8,6,9,8,1,2,4,4,2,True,True,True,False,Priority: low outcomes in both subjects
+GP,M,16,8,12,9,13,0,0,0,2,-4,True,False,False,False,Priority: Mathematics-specific support
+GP,M,17,12,13,12,12,0,0,0,0,-1,False,False,False,False,Monitor: currently stable
+GP,M,17,8,10,9,10,1,1,2,0,-2,True,False,True,False,Priority: Mathematics-specific support
+GP,F,17,13,17,12,15,0,0,6,2,-4,False,False,False,False,Monitor: currently stable
+GP,M,19,11,14,11,13,0,0,12,4,-3,False,False,False,True,Monitor: emerging risk signals
+GP,M,18,14,16,14,16,0,0,8,2,-2,False,False,False,True,Monitor: emerging risk signals
+GP,F,17,0,12,9,11,0,0,0,2,-12,True,False,False,False,Priority: Mathematics-specific support
+GP,F,18,18,15,18,15,0,0,21,2,3,False,False,False,True,Monitor: emerging risk signals
+GP,M,18,8,11,8,10,0,0,2,2,-3,True,False,False,False,Priority: Mathematics-specific support
+GP,M,18,12,12,12,11,0,0,1,2,0,False,False,False,False,Monitor: currently stable
+GP,F,17,9,13,9,12,0,0,4,2,-4,True,False,False,False,Priority: Mathematics-specific support
+GP,F,18,0,13,10,12,0,0,0,0,-13,True,False,False,False,Priority: Mathematics-specific support
+GP,M,18,17,16,17,16,0,0,13,6,1,False,False,False,True,Monitor: emerging risk signals
+GP,M,17,10,14,9,11,0,0,2,0,-4,False,False,False,False,Monitor: emerging risk signals
+GP,F,18,11,12,10,11,0,0,8,8,-1,False,False,False,True,Monitor: emerging risk signals
+GP,M,18,10,14,9,12,0,0,10,4,-4,False,False,False,True,Monitor: emerging risk signals
+GP,F,18,0,10,0,9,0,0,0,12,-10,True,False,False,True,Priority: Mathematics-specific support
+GP,F,19,9,12,9,12,2,0,15,16,-3,True,False,True,True,Priority: Mathematics-specific support
+GP,F,18,14,16,14,16,0,0,4,10,-2,False,False,False,True,Monitor: emerging risk signals
+GP,F,18,11,13,11,13,0,0,2,2,-2,False,False,False,False,Monitor: currently stable
+GP,M,17,14,18,14,17,0,0,2,2,-4,False,False,False,False,Monitor: currently stable
+GP,F,17,10,16,10,16,0,0,2,6,-6,False,False,False,True,Monitor: emerging risk signals
+GP,F,17,12,12,12,12,0,0,6,6,0,False,False,False,True,Monitor: emerging risk signals
+GP,F,18,9,10,9,9,0,0,75,15,-1,True,False,False,True,Priority: Mathematics-specific support
+GP,M,18,9,12,9,12,0,0,22,6,-3,True,False,False,True,Priority: Mathematics-specific support
+GP,M,18,9,13,9,12,0,0,22,0,-4,True,False,False,True,Priority: Mathematics-specific support
+GP,F,18,8,13,8,12,1,1,15,2,-5,True,False,True,True,Priority: Mathematics-specific support
+GP,M,18,10,10,11,10,0,0,8,0,0,False,False,False,True,Monitor: emerging risk signals
+GP,M,17,8,10,8,11,0,0,30,22,-2,True,False,False,True,Priority: Mathematics-specific support
+GP,M,17,10,13,9,13,1,0,19,18,-3,False,False,True,True,Monitor: emerging risk signals
+GP,F,18,12,18,12,17,0,0,1,2,-6,False,False,False,False,Monitor: currently stable
+GP,F,18,10,13,9,13,0,0,4,0,-3,False,False,False,False,Monitor: emerging risk signals
+GP,F,18,10,14,9,14,0,0,4,0,-4,False,False,False,False,Monitor: emerging risk signals
+GP,F,17,11,14,9,12,0,0,4,12,-3,False,False,False,True,Monitor: emerging risk signals
+GP,M,17,11,12,10,12,0,0,2,0,-1,False,False,False,False,Monitor: currently stable
+GP,F,18,19,18,18,18,0,0,5,0,1,False,False,False,False,Monitor: currently stable
+GP,F,17,12,14,12,13,0,0,6,0,-2,False,False,False,False,Monitor: currently stable
+GP,M,18,14,15,14,15,0,0,6,0,-1,False,False,False,False,Monitor: currently stable
+GP,M,18,15,17,13,17,0,0,9,0,-2,False,False,False,True,Monitor: emerging risk signals
+GP,M,18,11,16,11,16,0,0,11,2,-5,False,False,False,True,Monitor: emerging risk signals
+GP,F,17,15,18,15,18,0,0,0,0,-3,False,False,False,False,Monitor: currently stable
+GP,F,17,18,19,18,19,0,0,6,0,-1,False,False,False,False,Monitor: currently stable
+GP,M,18,14,15,13,15,0,0,8,0,-1,False,False,False,True,Monitor: emerging risk signals
+GP,M,17,11,15,12,15,0,0,4,0,-4,False,False,False,False,Monitor: currently stable
+GP,F,19,0,13,9,13,0,0,0,2,-13,True,False,False,False,Priority: Mathematics-specific support
+GP,F,18,8,14,8,14,0,0,10,0,-6,True,False,False,True,Priority: Mathematics-specific support
+GP,F,18,14,17,13,17,0,0,0,0,-3,False,False,False,False,Monitor: currently stable
+GP,M,18,16,17,15,18,0,0,5,0,-1,False,False,False,False,Monitor: currently stable
+GP,F,18,11,15,10,15,0,0,14,0,-4,False,False,False,True,Monitor: emerging risk signals
+GP,M,17,10,13,11,13,0,0,0,0,-3,False,False,False,False,Monitor: currently stable
+GP,F,17,14,16,12,16,0,0,0,0,-2,False,False,False,False,Monitor: currently stable
+GP,F,17,18,18,17,18,0,0,0,0,0,False,False,False,False,Monitor: currently stable
+GP,M,20,18,15,18,15,0,2,0,0,3,False,False,True,False,Monitor: emerging risk signals
+GP,M,19,12,11,12,10,1,0,0,0,1,False,False,True,False,Monitor: emerging risk signals
+GP,F,18,0,15,8,12,0,0,0,2,-15,True,False,False,False,Priority: Mathematics-specific support
+GP,F,18,9,17,10,15,0,0,9,2,-8,True,False,False,True,Priority: Mathematics-specific support
+GP,F,17,10,17,11,15,0,0,0,2,-7,False,False,False,False,Monitor: currently stable
+GP,F,18,11,13,11,11,0,0,2,0,-2,False,False,False,False,Monitor: currently stable
+GP,F,17,13,17,13,14,0,0,23,14,-4,False,False,False,True,Monitor: emerging risk signals
+GP,F,17,9,13,9,13,0,0,12,4,-4,True,False,False,True,Priority: Mathematics-specific support
+GP,F,17,11,10,11,11,0,0,3,0,1,False,False,False,False,Monitor: currently stable
+GP,F,17,15,17,14,18,0,0,1,0,-2,False,False,False,False,Monitor: currently stable
+GP,F,17,15,15,15,14,0,0,0,0,0,False,False,False,False,Monitor: currently stable
+GP,M,18,11,13,12,14,0,0,3,0,-2,False,False,False,False,Monitor: currently stable
+GP,M,17,16,17,15,18,0,0,3,0,-1,False,False,False,False,Monitor: currently stable
+GP,M,17,10,10,10,10,0,0,8,2,0,False,False,False,True,Monitor: emerging risk signals
+GP,F,17,9,12,9,11,0,0,7,2,-3,True,False,False,False,Priority: Mathematics-specific support
+GP,F,17,9,13,9,12,0,0,7,0,-4,True,False,False,False,Priority: Mathematics-specific support
+GP,F,17,14,15,14,14,0,0,4,4,-1,False,False,False,False,Monitor: currently stable
+GP,M,18,8,12,8,11,0,0,2,0,-4,True,False,False,False,Priority: Mathematics-specific support
+GP,F,17,14,15,14,15,0,0,7,0,-1,False,False,False,False,Monitor: currently stable
+GP,F,18,0,12,0,11,0,0,0,8,-12,True,False,False,True,Priority: Mathematics-specific support
+GP,F,18,0,12,8,9,0,0,0,0,-12,True,False,False,False,Priority: Mathematics-specific support
+GP,F,18,0,14,9,13,0,0,0,6,-14,True,False,False,True,Priority: Mathematics-specific support
+GP,F,17,15,14,15,13,0,0,16,8,1,False,False,False,True,Monitor: emerging risk signals
+GP,F,17,0,15,8,13,0,0,0,0,-15,True,False,False,False,Priority: Mathematics-specific support
+GP,F,18,17,15,15,14,0,0,7,4,2,False,False,False,False,Monitor: currently stable
+GP,F,17,10,16,10,14,0,0,4,0,-6,False,False,False,False,Monitor: currently stable
+GP,M,18,0,12,10,12,1,0,0,6,-12,True,False,True,True,Priority: Mathematics-specific support
+GP,M,18,0,13,10,12,1,0,0,0,-13,True,False,True,False,Priority: Mathematics-specific support
+GP,M,18,15,17,15,16,0,0,11,6,-2,False,False,False,True,Monitor: emerging risk signals
+GP,F,17,0,14,8,12,1,0,0,18,-14,True,False,True,True,Priority: Mathematics-specific support
+GP,F,18,10,14,10,12,0,0,4,0,-4,False,False,False,False,Monitor: currently stable
+GP,F,18,14,17,13,16,0,0,7,4,-3,False,False,False,False,Monitor: currently stable
+GP,M,18,16,17,15,14,0,0,9,4,-1,False,False,False,True,Monitor: emerging risk signals
+GP,M,18,9,14,10,13,0,0,0,0,-5,True,False,False,False,Priority: Mathematics-specific support
+GP,F,17,15,13,15,12,0,0,0,0,2,False,False,False,False,Monitor: currently stable
+MS,M,18,13,11,13,10,1,0,10,8,2,False,False,True,True,Monitor: emerging risk signals
+MS,M,19,8,11,7,9,3,1,8,8,-3,True,False,True,True,Priority: Mathematics-specific support
+MS,M,17,13,10,13,9,0,1,2,4,3,False,False,True,False,Monitor: emerging risk signals
+MS,M,18,8,9,7,10,1,0,7,0,-1,True,True,True,False,Priority: low outcomes in both subjects
+MS,M,19,8,10,8,9,1,1,4,4,-2,True,False,True,False,Priority: Mathematics-specific support
+MS,M,17,11,11,11,11,0,1,4,4,0,False,False,True,False,Monitor: emerging risk signals
+MS,F,18,9,10,9,10,0,0,0,0,-1,True,False,False,False,Priority: Mathematics-specific support
+MS,F,17,13,12,13,12,0,0,4,2,1,False,False,False,False,Monitor: currently stable
+MS,F,17,11,15,12,14,0,0,2,0,-4,False,False,False,False,Monitor: currently stable
+MS,M,18,10,14,10,13,0,0,4,2,-4,False,False,False,False,Monitor: currently stable
+MS,F,18,16,18,16,17,0,0,0,0,-2,False,False,False,False,Monitor: currently stable
+MS,F,18,10,13,11,12,0,0,0,6,-3,False,False,False,True,Monitor: emerging risk signals
+MS,F,17,15,15,15,14,0,0,0,4,0,False,False,False,False,Monitor: currently stable
+MS,F,17,12,13,11,13,0,0,0,0,-1,False,False,False,False,Monitor: currently stable
+MS,M,18,10,9,10,10,0,0,4,0,1,False,True,False,False,Priority: Portuguese-specific support
+MS,M,18,13,16,13,16,0,0,0,0,-3,False,False,False,False,Monitor: currently stable
+MS,F,17,0,9,6,8,1,1,0,0,-9,True,True,True,False,Priority: low outcomes in both subjects
+MS,F,18,10,10,10,10,0,0,0,0,0,False,False,False,False,Monitor: currently stable
+MS,F,18,11,0,12,5,0,0,10,0,11,False,True,False,True,Priority: Portuguese-specific support
+MS,M,18,12,10,12,10,0,0,3,3,2,False,False,False,False,Monitor: currently stable
+MS,F,17,11,12,11,11,0,0,8,8,-1,False,False,False,True,Monitor: emerging risk signals
+MS,F,17,5,9,5,8,0,0,14,4,-4,True,True,False,True,Priority: low outcomes in both subjects
+MS,F,18,19,17,18,17,0,0,0,0,2,False,False,False,False,Monitor: currently stable
+MS,F,18,10,12,8,11,0,0,2,4,-2,False,False,False,False,Monitor: emerging risk signals
+MS,F,18,10,14,9,14,0,0,4,1,-4,False,False,False,False,Monitor: emerging risk signals
+MS,F,18,15,16,15,16,0,0,0,1,-1,False,False,False,False,Monitor: currently stable
+MS,F,17,10,9,10,9,0,0,17,10,1,False,True,False,True,Priority: Portuguese-specific support
+MS,M,18,14,19,14,18,0,0,4,4,-5,False,False,False,False,Monitor: currently stable
+MS,M,18,7,0,6,7,0,0,5,0,7,True,True,False,False,Priority: low outcomes in both subjects
+MS,M,17,10,16,11,15,0,0,2,4,-6,False,False,False,False,Monitor: currently stable
+MS,M,19,0,0,5,8,1,1,0,0,0,True,True,True,False,Priority: low outcomes in both subjects
+MS,M,18,5,0,5,7,1,1,14,0,5,True,True,True,True,Priority: low outcomes in both subjects
+MS,F,18,10,15,9,17,0,0,2,0,-5,False,False,False,False,Monitor: emerging risk signals
+MS,F,18,6,10,5,9,0,0,7,4,-4,True,False,False,False,Priority: Mathematics-specific support
+MS,F,19,0,10,5,11,1,1,0,4,-10,True,False,True,False,Priority: Mathematics-specific support
+MS,F,18,8,16,9,15,0,0,0,4,-8,True,False,False,False,Priority: Mathematics-specific support
+MS,F,18,0,7,5,8,1,2,0,3,-7,True,True,True,False,Priority: low outcomes in both subjects
+MS,F,18,0,9,5,12,1,0,0,6,-9,True,True,True,True,Priority: low outcomes in both subjects
+MS,M,17,16,10,16,10,0,0,3,6,6,False,False,False,True,Monitor: emerging risk signals
+MS,M,18,10,11,12,11,0,0,0,4,-1,False,False,False,False,Monitor: currently stable

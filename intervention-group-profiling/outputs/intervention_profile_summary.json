@@ -1,0 +1,156 @@
+{
+  "matched_records": 382,
+  "merge_keys": [
+    "school",
+    "sex",
+    "age",
+    "address",
+    "famsize",
+    "Pstatus",
+    "Medu",
+    "Fedu",
+    "Mjob",
+    "Fjob",
+    "reason",
+    "nursery",
+    "internet"
+  ],
+  "low_grade_threshold": 10,
+  "high_absence_rule": "subject absences at or above that subject's 75th percentile",
+  "profiles": [
+    {
+      "profile": "Monitor: currently stable",
+      "students": 139,
+      "mean_math_G3": 13.553956834532373,
+      "mean_portuguese_G3": 14.06474820143885,
+      "low_math_rate": 0.0,
+      "low_portuguese_rate": 0.0,
+      "failure_signal_rate": 0.0,
+      "high_absence_signal_rate": 0.0
+    },
+    {
+      "profile": "Monitor: emerging risk signals",
+      "students": 107,
+      "mean_math_G3": 12.271028037383177,
+      "mean_portuguese_G3": 12.94392523364486,
+      "low_math_rate": 0.0,
+      "low_portuguese_rate": 0.0,
+      "failure_signal_rate": 0.205607476635514,
+      "high_absence_signal_rate": 0.7570093457943925
+    },
+    {
+      "profile": "Priority: Mathematics-specific support",
+      "students": 104,
+      "mean_math_G3": 5.509615384615385,
+      "mean_portuguese_G3": 11.85576923076923,
+      "low_math_rate": 1.0,
+      "low_portuguese_rate": 0.0,
+      "failure_signal_rate": 0.28846153846153844,
+      "high_absence_signal_rate": 0.4519230769230769
+    },
+    {
+      "profile": "Priority: low outcomes in both subjects",
+      "students": 23,
+      "mean_math_G3": 4.173913043478261,
+      "mean_portuguese_G3": 6.434782608695652,
+      "low_math_rate": 1.0,
+      "low_portuguese_rate": 1.0,
+      "failure_signal_rate": 0.7391304347826086,
+      "high_absence_signal_rate": 0.6086956521739131
+    },
+    {
+      "profile": "Priority: Portuguese-specific support",
+      "students": 9,
+      "mean_math_G3": 11.333333333333334,
+      "mean_portuguese_G3": 6.666666666666667,
+      "low_math_rate": 0.0,
+      "low_portuguese_rate": 1.0,
+      "failure_signal_rate": 0.3333333333333333,
+      "high_absence_signal_rate": 0.4444444444444444
+    }
+  ],
+  "clustering": {
+    "features_used": [
+      "age",
+      "traveltime_math",
+      "studytime_math",
+      "failures_math",
+      "absences_math",
+      "G1_math",
+      "G2_math",
+      "traveltime_portuguese",
+      "studytime_portuguese",
+      "failures_portuguese",
+      "absences_portuguese",
+      "G1_portuguese",
+      "G2_portuguese"
+    ],
+    "selection_metric": "silhouette score (higher is better)",
+    "selected_algorithm": "K-Means",
+    "selected_parameters": "k=2",
+    "selected_clusters": 2,
+    "selected_silhouette": 0.21512810890359596,
+    "cluster_summary": [
+      {
+        "cluster": 0,
+        "records": 241,
+        "mean_math_G3": 12.182572614107883,
+        "mean_portuguese_G3": 13.821576763485478,
+        "mean_math_absences": 3.8298755186721993,
+        "mean_portuguese_absences": 2.203319502074689,
+        "mean_math_failures": 0.029045643153526972,
+        "mean_portuguese_failures": 0.008298755186721992
+      },
+      {
+        "cluster": 1,
+        "records": 141,
+        "mean_math_G3": 7.319148936170213,
+        "mean_portuguese_G3": 10.28368794326241,
+        "mean_math_absences": 7.865248226950355,
+        "mean_portuguese_absences": 6.184397163120567,
+        "mean_math_failures": 0.7375886524822695,
+        "mean_portuguese_failures": 0.36879432624113473
+      }
+    ],
+    "cluster_sizes": [
+      {
+        "cluster": 0,
+        "records": 241
+      },
+      {
+        "cluster": 1,
+        "records": 141
+      }
+    ],
+    "stability": {
+      "repeats": 10,
+      "mean_adjusted_rand_index": 0.989499756004858,
+      "minimum_adjusted_rand_index": 0.9790131310607226,
+      "scores": [
+        0.9790131310607226,
+        1.0,
+        1.0,
+        0.9894809284042054,
+        0.9790284391588803,
+        0.9894847654574815,
+        1.0,
+        0.9790284391588803,
+        0.9894809284042054,
+        0.9894809284042054
+      ]
+    },
+    "limitations": [
+      "Clustering finds similarity patterns; it does not prove causes or intervention effects.",
+      "G3 was excluded from clustering and used only to interpret the resulting groups.",
+      "The matched merge key is not a unique student ID and can create duplicate-key records.",
+      "Cluster labels are arbitrary identifiers and should not be treated as student quality rankings."
+    ]
+  },
+  "interpretation": "Profiles are descriptive support-prioritisation signals. They do not prove causes, diagnose students, or replace teacher/counsellor review.",
+  "limitations": [
+    "The merge key has no explicit student ID, so matched records are not guaranteed identity matches.",
+    "The data is historical and cross-sectional; profile membership is not a causal intervention effect.",
+    "The grade threshold and absence rule are transparent screening choices, not official school policy.",
+    "Sensitive attributes must not be used as automatic exclusion or discipline rules."
+  ]
+}

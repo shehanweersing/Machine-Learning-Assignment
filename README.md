@@ -93,6 +93,34 @@ correlation analysis, academic progression (`G1` to `G3`), missing-value audit,
 before/after scaling comparison, outlier review, model comparison, prediction
 quality and the responsible recommendation workflow.
 
+## Intervention group profiling lens
+
+In addition to the Mathematics regression lens, the project includes a
+descriptive cross-subject profiling workflow. It follows
+[`student-merge.R`](intervention-group-profiling/student-merge.R) and
+uses the matched Mathematics/Portuguese records to identify low outcomes in
+both subjects, subject-specific support needs, emerging risk signals and
+currently stable records. It is a human-review aid, not an automatic grading
+or intervention decision.
+
+Run it with:
+
+```powershell
+.\.venv\Scripts\python.exe intervention-group-profiling\intervention_group_profiling.py
+```
+
+The results and charts are written to
+`intervention-group-profiling/outputs/`. The merge
+produces 382 matched records, but the shared attributes are not a unique
+student identifier: duplicate merge keys are explicitly reported in the
+output. Full rules, evidence and limitations are documented in
+[intervention-group-profiling/README.md](intervention-group-profiling/README.md).
+The intervention lens also compares K-Means, hierarchical clustering and
+DBSCAN. Final grades are excluded from clustering and used only to interpret
+the resulting groups; the current best configuration is K-Means with `k=2`.
+The clustering lens also reports silhouette scores, cluster balance, feature
+profiles, PCA projection and a 10-seed Adjusted Rand Index stability check.
+
 
 
 

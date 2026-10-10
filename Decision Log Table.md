@@ -15,3 +15,6 @@
 | Tuning | Defaults, grid search | GridSearchCV on training data | Selected parameters are not influenced by the final test set |
 | Metrics | Accuracy, RMSE only, multiple regression metrics | RMSE, MAE, R² | RMSE penalises large errors; MAE is interpretable in grade points; R² gives explained variance |
 | Recommendation | Automatic intervention, human review | Human review screening only | Predictions must not be the sole basis for student decisions |
+| Intervention profiling lens | Use only Math, merge both subjects, descriptive groups | Use matched Math/Portuguese records with transparent rules | Adds cross-subject support context; merge key is not a unique student ID, so results are records for human review rather than verified identities |
+| Unsupervised clustering | K-Means only, hierarchical only, DBSCAN only, compare methods | Compare K-Means (`k=2..6`), Ward hierarchical (`k=2..6`) and DBSCAN; select highest valid silhouette | Adds an exploratory similarity lens; excludes G3 from clustering and keeps cluster labels descriptive rather than prescriptive |
+| Cluster validation | Report one score, inspect only a PCA plot | Report silhouette scores, cluster sizes, feature heatmap, PCA projection and repeated-seed ARI | Makes separation, balance, interpretation and stability auditable rather than relying on one visual |

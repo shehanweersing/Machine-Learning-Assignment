@@ -17,6 +17,10 @@ truthfully generated from code.
 - [x] Untouched test-set evaluation
 - [x] Residual and feature-importance diagnostics
 - [x] Recommendation and limitations
+- [x] Cross-subject intervention group profiling lens with merge-quality warning
+- [x] Profile rules, group evidence tables and visualisations
+- [x] Unsupervised clustering comparison (K-Means, hierarchical, DBSCAN)
+- [x] Clustering validation: silhouette, balance, feature profiles and stability
 - [x] Dataset source and SHA-256 fingerprint
 - [ ] Manual: verify the three-minute demo video shows the same workflow and metrics
 - [ ] Manual: complete and approve the AI-use transparency statement
@@ -35,3 +39,7 @@ truthfully generated from code.
 - Do not present the test-set result as a guaranteed future performance.
 - Do not use a prediction as the sole basis for grading, exclusion or
   disciplinary action.
+- Do not describe the merged records as verified unique students; the supplied
+  merge key has duplicate combinations and no explicit student ID.
+- Do not present clusters as diagnoses, causes, or student quality rankings;
+  `G3` is excluded from clustering and used only for interpretation.

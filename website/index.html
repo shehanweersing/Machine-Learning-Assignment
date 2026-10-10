@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
 </head>
 <body>
   <div class="app-shell">
@@ -25,6 +26,7 @@
         <a class="nav-link" href="#models"><span>03</span><b>Model evaluation</b></a>
         <a class="nav-link" href="#recommendation"><span>04</span><b>Recommendation</b></a>
       </nav>
+      <a class="lens-switch" href="intervention.html"><span>↗</span><div><strong>Open intervention lens</strong><small>Cross-subject support profiles</small></div></a>
       <div class="sidebar-bottom">
         <div class="status-pill"><i></i> Regression lens</div>
         <p>IT3091 · Student Performance Dataset</p>
@@ -47,7 +49,7 @@
               <span class="callout-icon">↗</span>
               <div><strong>The decision</strong><p>Use the prediction as a screening signal for teacher review — never as an automated grade or disciplinary decision.</p></div>
             </div>
-            <a class="scroll-link" href="#eda">Explore the evidence <span>↓</span></a>
+            <div class="hero-actions"><a class="scroll-link" href="#eda">Explore the evidence <span>↓</span></a><a class="primary-link" href="intervention.html">Open intervention lens <span>→</span></a></div>
           </div>
           <div class="hero-visual">
             <div class="orb orb-one"></div><div class="orb orb-two"></div>
@@ -118,7 +120,7 @@
 
       <section id="models" class="page-section">
         <div class="section-heading section-heading-wide">
-          <div><div class="eyebrow"><span class="eyebrow-line"></span> 03 / MODEL EVALUATION</div><h2>Evidence before selection</h2></div>
+          <div><div class="eyebrow"><span class="eyebrow-line"></span> 04 / MODEL EVALUATION</div><h2>Evidence before selection</h2></div>
           <p>We compared a baseline, a linear model and two tree ensembles using the same leakage-safe pipeline and five-fold cross-validation.</p>
         </div>
         <div class="model-layout">
@@ -138,7 +140,7 @@
 
       <section id="recommendation" class="page-section recommendation-section">
         <div class="recommendation-card">
-          <div class="recommendation-copy"><div class="eyebrow"><span class="eyebrow-line"></span> 04 / RECOMMENDATION</div><h2>Turn a prediction into<br><em>responsible action.</em></h2><p>After G2 is available, flag students whose predicted final grade is below 10 for a teacher or counsellor conversation.</p><div class="recommendation-rule"><span class="rule-icon">✓</span><div><strong>Human review required</strong><p>The model is a screening aid — not the sole basis for grading, exclusion or discipline.</p></div></div></div>
+          <div class="recommendation-copy"><div class="eyebrow"><span class="eyebrow-line"></span> 05 / RECOMMENDATION</div><h2>Turn a prediction into<br><em>responsible action.</em></h2><p>After G2 is available, flag students whose predicted final grade is below 10 for a teacher or counsellor conversation.</p><div class="recommendation-rule"><span class="rule-icon">✓</span><div><strong>Human review required</strong><p>The model is a screening aid — not the sole basis for grading, exclusion or discipline.</p></div></div></div>
           <div class="funnel"><div class="funnel-top"><span>TEST SET SCREENED</span><strong>79</strong></div><div class="funnel-shape"><div class="funnel-fill"></div><span>37 flagged</span></div><div class="funnel-bottom"><strong>46.8%</strong><span>referred for review</span></div></div>
         </div>
         <div class="next-steps"><div><span class="step-number">01</span><strong>Teacher review</strong><p>Combine the prediction with attendance, context and a human conversation.</p></div><div><span class="step-number">02</span><strong>Support, not punishment</strong><p>Use the signal to consider support options, not to label a student.</p></div><div><span class="step-number">03</span><strong>Validate before deployment</strong><p>Test on a current local cohort and monitor fairness before real use.</p></div></div>

@@ -1,0 +1,16 @@
+algorithm,parameters,clusters,noise,silhouette
+K-Means,k=2,2,0,0.21512810890359596
+DBSCAN,"eps=1.2, min_samples=8",3,328,0.19251526023940854
+K-Means,k=4,4,0,0.16589919927810676
+K-Means,k=5,5,0,0.16390903739995571
+Hierarchical,k=2,2,0,0.16334336272998556
+K-Means,k=6,6,0,0.16126010238720523
+DBSCAN,"eps=1.8, min_samples=8",2,180,0.1601196970376934
+K-Means,k=3,3,0,0.15810274299651086
+Hierarchical,k=3,3,0,0.14744352411235725
+DBSCAN,"eps=1.5, min_samples=8",5,233,0.13998339697595144
+Hierarchical,k=5,5,0,0.13899642503009288
+Hierarchical,k=4,4,0,0.11948338908809984
+Hierarchical,k=6,6,0,0.10813172526468823
+DBSCAN,"eps=0.8, min_samples=8",0,382,
+DBSCAN,"eps=1.0, min_samples=8",0,382,
