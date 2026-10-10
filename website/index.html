@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student Performance Prediction - IT3091 machine learning project">
+  <title>Student Performance | ML Project Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview" aria-label="Student Performance home">
+        <span class="brand-mark">SP</span>
+        <span><strong>Student<br>Performance</strong><small>ML project dashboard</small></span>
+      </a>
+      <div class="sidebar-rule"></div>
+      <p class="nav-label">Project walkthrough</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#overview"><span>01</span><b>Overview</b></a>
+        <a class="nav-link" href="#eda"><span>02</span><b>Data exploration</b></a>
+        <a class="nav-link" href="#models"><span>03</span><b>Model evaluation</b></a>
+        <a class="nav-link" href="#recommendation"><span>04</span><b>Recommendation</b></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="status-pill"><i></i> Regression lens</div>
+        <p>IT3091 · Student Performance Dataset</p>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <div class="breadcrumb"><span>IT3091 / Machine Learning</span><b>/</b><strong>Student performance</strong></div>
+        <div class="topbar-actions"><span class="data-badge">Math dataset · n = 395</span><button class="menu-toggle" aria-label="Open menu">☰</button></div>
+      </header>
+
+      <section id="overview" class="page-section hero-section">
+        <div class="eyebrow"><span class="eyebrow-line"></span> EXECUTIVE OVERVIEW</div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1>Can we predict a<br><em>student's final grade?</em></h1>
+            <p class="hero-lead">We use academic, demographic and lifestyle information to estimate final mathematics performance after the second grading period.</p>
+            <div class="decision-callout">
+              <span class="callout-icon">↗</span>
+              <div><strong>The decision</strong><p>Use the prediction as a screening signal for teacher review — never as an automated grade or disciplinary decision.</p></div>
+            </div>
+            <a class="scroll-link" href="#eda">Explore the evidence <span>↓</span></a>
+          </div>
+          <div class="hero-visual">
+            <div class="orb orb-one"></div><div class="orb orb-two"></div>
+            <div class="grade-card">
+              <div class="card-top"><span>Predicted final grade</span><span class="mini-status">MODEL OUTPUT</span></div>
+              <div class="grade-number">12<span>.4</span><small>/ 20</small></div>
+              <div class="grade-meter"><i></i></div>
+              <div class="grade-card-footer"><span>Random Forest</span><span>after G2</span></div>
+            </div>
+            <div class="floating-stat stat-one"><span class="stat-icon">◎</span><div><strong>80.3%</strong><small>variance explained</small></div></div>
+            <div class="floating-stat stat-two"><span class="stat-icon">±</span><div><strong>1.21 pts</strong><small>average error</small></div></div>
+          </div>
+        </div>
+
+        <div class="section-heading">
+          <div><span class="eyebrow">AT A GLANCE</span><h2>One project, four answers</h2></div>
+          <p>Everything a reviewer needs to understand the problem, evidence and decision in under three minutes.</p>
+        </div>
+        <div class="metric-grid">
+          <article class="metric-card"><span class="metric-label">STUDENTS</span><strong>395</strong><p>Math students in the selected dataset</p><span class="metric-accent accent-teal"></span></article>
+          <article class="metric-card"><span class="metric-label">FEATURES</span><strong>33</strong><p>Academic, social and demographic variables</p><span class="metric-accent accent-coral"></span></article>
+          <article class="metric-card"><span class="metric-label">BEST MODEL</span><strong>RF</strong><p>Random Forest after training-only tuning</p><span class="metric-accent accent-yellow"></span></article>
+          <article class="metric-card"><span class="metric-label">TEST MAE</span><strong>1.21</strong><p>Mean absolute error in grade points</p><span class="metric-accent accent-purple"></span></article>
+        </div>
+      </section>
+
+      <section id="eda" class="page-section tinted-section">
+        <div class="section-heading section-heading-wide">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span> 02 / DATA EXPLORATION</div><h2>What did the data reveal?</h2></div>
+          <p>EDA helped us decide which signals matter, which claims to avoid, and when the prediction can responsibly be made.</p>
+        </div>
+        <div class="eda-layout">
+          <article class="panel chart-panel grade-distribution">
+            <div class="panel-header"><div><span class="panel-kicker">TARGET DISTRIBUTION</span><h3>Final grades are spread across the scale</h3></div><span class="chart-note">G3 · 0–20</span></div>
+            <div class="bar-chart" aria-label="Final grade distribution">
+              <div class="bar-wrap"><i style="height:18%"></i><small>0–4</small><b>56</b></div>
+              <div class="bar-wrap"><i style="height:62%"></i><small>5–8</small><b>101</b></div>
+              <div class="bar-wrap"><i style="height:100%"></i><small>9–12</small><b>159</b></div>
+              <div class="bar-wrap"><i style="height:50%"></i><small>13–16</small><b>61</b></div>
+              <div class="bar-wrap"><i style="height:15%"></i><small>17–20</small><b>18</b></div>
+            </div>
+            <p class="chart-caption"><strong>Insight:</strong> G3 has a mean of 10.42 and standard deviation of 4.58, giving the regression task meaningful variation to explain.</p>
+          </article>
+          <article class="panel insight-panel">
+            <div class="panel-header"><div><span class="panel-kicker">STRONGEST SIGNAL</span><h3>Second-period grade leads the story</h3></div><span class="signal-badge">r = 0.905</span></div>
+            <div class="signal-list">
+              <div><span>G2</span><div class="signal-track"><i style="width:90.5%"></i></div><b>0.905</b></div>
+              <div><span>G1</span><div class="signal-track"><i style="width:80.1%"></i></div><b>0.801</b></div>
+              <div><span>Failures</span><div class="signal-track negative"><i style="width:36%"></i></div><b>−0.360</b></div>
+              <div><span>Study time</span><div class="signal-track"><i style="width:10%"></i></div><b>0.098</b></div>
+            </div>
+            <p class="chart-caption"><strong>Interpretation:</strong> G1 and G2 are predictive because they are available after the relevant grading periods — not because they prove causation.</p>
+          </article>
+        </div>
+        <div class="eda-grid-two">
+          <article class="panel compact-chart"><div class="panel-header"><div><span class="panel-kicker">BEHAVIOURAL PATTERN</span><h3>Failures vs final grade</h3></div></div><div class="dot-bars"><div><span>0</span><i style="height:84%"></i><b>11.25</b></div><div><span>1</span><i style="height:61%"></i><b>8.12</b></div><div><span>2</span><i style="height:46%"></i><b>6.24</b></div><div><span>3+</span><i style="height:42%"></i><b>5.69</b></div></div><p class="chart-caption"><strong>Insight:</strong> Students with more previous failures have lower average G3; this is a risk signal, not a causal conclusion.</p></article>
+          <article class="panel compact-chart"><div class="panel-header"><div><span class="panel-kicker">WHAT NOT TO OVERSTATE</span><h3>Absences are weak on their own</h3></div></div><div class="mini-line-chart"><svg viewBox="0 0 500 125" role="img" aria-label="Weak absence relationship"><path d="M0 85 C75 68 115 92 170 75 S270 81 320 65 S420 78 500 62" fill="none" stroke="#13b5a4" stroke-width="4"/><line x1="0" y1="103" x2="500" y2="103" stroke="#dce4e5"/><circle cx="400" cy="75" r="7" fill="#ef6f61"/></svg><span class="corr-label">correlation = 0.034</span></div><p class="chart-caption"><strong>Insight:</strong> Absences are retained as a candidate feature, but not used as a standalone intervention rule.</p></article>
+        </div>
+      </section>
+
+      <section id="models" class="page-section">
+        <div class="section-heading section-heading-wide">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span> 03 / MODEL EVALUATION</div><h2>Evidence before selection</h2></div>
+          <p>We compared a baseline, a linear model and two tree ensembles using the same leakage-safe pipeline and five-fold cross-validation.</p>
+        </div>
+        <div class="model-layout">
+          <article class="panel model-table-panel"><div class="panel-header"><div><span class="panel-kicker">CROSS-VALIDATED COMPARISON</span><h3>Lower RMSE is better</h3></div><span class="cv-badge">5 folds · training data only</span></div><div class="model-rows">
+            <div class="model-row best"><span class="rank">01</span><strong>Random Forest</strong><div class="model-bar"><i style="width:82%"></i></div><b>1.507</b><em>BEST</em></div>
+            <div class="model-row"><span class="rank">02</span><strong>Extra Trees</strong><div class="model-bar"><i style="width:74%"></i></div><b>1.637</b><em></em></div>
+            <div class="model-row"><span class="rank">03</span><strong>Ridge</strong><div class="model-bar"><i style="width:52%"></i></div><b>2.074</b><em></em></div>
+            <div class="model-row baseline"><span class="rank">—</span><strong>Mean baseline</strong><div class="model-bar"><i style="width:23%"></i></div><b>4.563</b><em></em></div>
+          </div><p class="chart-caption"><strong>Why Random Forest?</strong> It achieved the lowest cross-validated RMSE and captured non-linear relationships better than Ridge, while clearly outperforming the mean baseline.</p></article>
+          <article class="panel score-panel"><span class="panel-kicker">FINAL HOLD-OUT TEST</span><h3>Random Forest performance</h3><div class="score-main">0.803 <small>R²</small></div><div class="score-items"><span><b>2.008</b><small>RMSE</small></span><span><b>1.208</b><small>MAE</small></span><span><b>79</b><small>test students</small></span></div><div class="confidence-line"><span>Average error</span><strong>≈ 1.21 grade points</strong></div></article>
+        </div>
+        <div class="evaluation-grid">
+          <article class="panel predicted-panel"><div class="panel-header"><div><span class="panel-kicker">PREDICTION QUALITY</span><h3>Actual vs predicted grades</h3></div><span class="chart-note">Test set · n = 79</span></div><div class="scatter"><svg viewBox="0 0 520 220" role="img" aria-label="Actual versus predicted grades"><line x1="35" y1="190" x2="500" y2="20" stroke="#d0dcdf" stroke-width="2" stroke-dasharray="6 6"/><line x1="35" y1="190" x2="500" y2="190" stroke="#bbcacc"/><line x1="35" y1="190" x2="35" y2="20" stroke="#bbcacc"/><g fill="#13b5a4" opacity=".65"><circle cx="105" cy="151" r="5"/><circle cx="135" cy="135" r="5"/><circle cx="158" cy="162" r="5"/><circle cx="185" cy="117" r="5"/><circle cx="220" cy="130" r="5"/><circle cx="247" cy="90" r="5"/><circle cx="278" cy="105" r="5"/><circle cx="312" cy="70" r="5"/><circle cx="350" cy="86" r="5"/><circle cx="380" cy="52" r="5"/><circle cx="420" cy="65" r="5"/><circle cx="462" cy="35" r="5"/></g><text x="250" y="213">Actual G3</text><text x="5" y="110" transform="rotate(-90 5 110)">Predicted G3</text></svg></div><p class="chart-caption">Points closer to the diagonal indicate closer predictions. The model is useful for screening, but individual errors remain and must be reviewed.</p></article>
+          <article class="panel feature-panel"><div class="panel-header"><div><span class="panel-kicker">MODEL INTERPRETATION</span><h3>What the model used most</h3></div></div><div class="feature-list"><div><span>G2</span><div><i style="width:100%"></i></div><b>77.9%</b></div><div><span>Absences</span><div><i style="width:15%"></i></div><b>11.5%</b></div><div><span>Reason: home</span><div><i style="width:3%"></i></div><b>1.6%</b></div><div><span>Grade progress</span><div><i style="width:2%"></i></div><b>1.1%</b></div></div><p class="chart-caption"><strong>Caution:</strong> Feature importance explains model behaviour; it does not prove that changing a feature will change a student's grade.</p></article>
+        </div>
+      </section>
+
+      <section id="recommendation" class="page-section recommendation-section">
+        <div class="recommendation-card">
+          <div class="recommendation-copy"><div class="eyebrow"><span class="eyebrow-line"></span> 04 / RECOMMENDATION</div><h2>Turn a prediction into<br><em>responsible action.</em></h2><p>After G2 is available, flag students whose predicted final grade is below 10 for a teacher or counsellor conversation.</p><div class="recommendation-rule"><span class="rule-icon">✓</span><div><strong>Human review required</strong><p>The model is a screening aid — not the sole basis for grading, exclusion or discipline.</p></div></div></div>
+          <div class="funnel"><div class="funnel-top"><span>TEST SET SCREENED</span><strong>79</strong></div><div class="funnel-shape"><div class="funnel-fill"></div><span>37 flagged</span></div><div class="funnel-bottom"><strong>46.8%</strong><span>referred for review</span></div></div>
+        </div>
+        <div class="next-steps"><div><span class="step-number">01</span><strong>Teacher review</strong><p>Combine the prediction with attendance, context and a human conversation.</p></div><div><span class="step-number">02</span><strong>Support, not punishment</strong><p>Use the signal to consider support options, not to label a student.</p></div><div><span class="step-number">03</span><strong>Validate before deployment</strong><p>Test on a current local cohort and monitor fairness before real use.</p></div></div>
+        <div class="footnote"><span>LIMITATIONS</span> Historical 2005–2006 Portuguese school data · Small sample · No external validation · G1/G2 mean this is an after-G2 model · Prediction is not causation</div>
+      </section>
+      <footer><span>Student Performance Prediction · IT3091 Machine Learning</span><span>Built from the reproducible project pipeline</span></footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
