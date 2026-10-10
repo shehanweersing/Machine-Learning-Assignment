@@ -1,0 +1,45 @@
+{
+  "rows": 395,
+  "columns": 33,
+  "missing_cells": 0,
+  "duplicate_rows": 0,
+  "target": {
+    "count": 395.0,
+    "mean": 10.4152,
+    "std": 4.5814,
+    "min": 0.0,
+    "25%": 8.0,
+    "50%": 11.0,
+    "75%": 14.0,
+    "max": 20.0
+  },
+  "target_correlations": {
+    "age": -0.1616,
+    "Medu": 0.2171,
+    "Fedu": 0.1525,
+    "traveltime": -0.1171,
+    "studytime": 0.0978,
+    "failures": -0.3604,
+    "famrel": 0.0514,
+    "freetime": 0.0113,
+    "goout": -0.1328,
+    "Dalc": -0.0547,
+    "Walc": -0.0519,
+    "health": -0.0613,
+    "absences": 0.0342,
+    "G1": 0.8015,
+    "G2": 0.9049
+  },
+  "failure_group_means": {
+    "0": 11.2532,
+    "1": 8.12,
+    "2": 6.2353,
+    "3": 5.6875
+  },
+  "studytime_group_means": {
+    "1": 10.0476,
+    "2": 10.1717,
+    "3": 11.4,
+    "4": 11.2593
+  }
+}

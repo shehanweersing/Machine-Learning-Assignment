@@ -1,0 +1,9 @@
+level,count,mean,median,grouping
+0,312,11.253205128205128,11.0,failures
+1,50,8.12,9.0,failures
+2,17,6.235294117647059,8.0,failures
+3,16,5.6875,7.0,failures
+1,105,10.047619047619047,10.0,studytime
+2,198,10.171717171717171,11.0,studytime
+3,65,11.4,12.0,studytime
+4,27,11.25925925925926,12.0,studytime
