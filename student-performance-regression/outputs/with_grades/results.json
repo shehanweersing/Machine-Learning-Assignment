@@ -1,0 +1,151 @@
+{
+  "configuration": {
+    "include_grades": true,
+    "random_state": 42,
+    "test_size": 0.2,
+    "cv_folds": 5,
+    "selected_model": "Random Forest",
+    "best_parameters": {
+      "model__max_depth": 10,
+      "model__min_samples_leaf": 1,
+      "model__n_estimators": 300
+    }
+  },
+  "audit": {
+    "source": "C:\\Users\\sheha\\Downloads\\student+performance\\student-performance-regression\\data\\student-mat.csv",
+    "rows": 395,
+    "columns": 33,
+    "missing_values": 0,
+    "missing_by_column": {
+      "school": 0,
+      "sex": 0,
+      "age": 0,
+      "address": 0,
+      "famsize": 0,
+      "Pstatus": 0,
+      "Medu": 0,
+      "Fedu": 0,
+      "Mjob": 0,
+      "Fjob": 0,
+      "reason": 0,
+      "guardian": 0,
+      "traveltime": 0,
+      "studytime": 0,
+      "failures": 0,
+      "schoolsup": 0,
+      "famsup": 0,
+      "paid": 0,
+      "activities": 0,
+      "nursery": 0,
+      "higher": 0,
+      "internet": 0,
+      "romantic": 0,
+      "famrel": 0,
+      "freetime": 0,
+      "goout": 0,
+      "Dalc": 0,
+      "Walc": 0,
+      "health": 0,
+      "absences": 0,
+      "G1": 0,
+      "G2": 0,
+      "G3": 0
+    },
+    "duplicate_rows": 0,
+    "numeric_ranges": {
+      "age": {
+        "min": 15.0,
+        "max": 22.0
+      },
+      "Medu": {
+        "min": 0.0,
+        "max": 4.0
+      },
+      "Fedu": {
+        "min": 0.0,
+        "max": 4.0
+      },
+      "traveltime": {
+        "min": 1.0,
+        "max": 4.0
+      },
+      "studytime": {
+        "min": 1.0,
+        "max": 4.0
+      },
+      "failures": {
+        "min": 0.0,
+        "max": 3.0
+      },
+      "famrel": {
+        "min": 1.0,
+        "max": 5.0
+      },
+      "freetime": {
+        "min": 1.0,
+        "max": 5.0
+      },
+      "goout": {
+        "min": 1.0,
+        "max": 5.0
+      },
+      "Dalc": {
+        "min": 1.0,
+        "max": 5.0
+      },
+      "Walc": {
+        "min": 1.0,
+        "max": 5.0
+      },
+      "health": {
+        "min": 1.0,
+        "max": 5.0
+      },
+      "absences": {
+        "min": 0.0,
+        "max": 75.0
+      },
+      "G1": {
+        "min": 3.0,
+        "max": 19.0
+      },
+      "G2": {
+        "min": 0.0,
+        "max": 19.0
+      },
+      "G3": {
+        "min": 0.0,
+        "max": 20.0
+      }
+    },
+    "target_distribution": {
+      "count": 395.0,
+      "mean": 10.4152,
+      "std": 4.5814,
+      "min": 0.0,
+      "25%": 8.0,
+      "50%": 11.0,
+      "75%": 14.0,
+      "max": 20.0
+    },
+    "zero_final_grades": 38
+  },
+  "split": {
+    "train_rows": 316,
+    "test_rows": 79
+  },
+  "evaluation": {
+    "RMSE": 2.00769726305865,
+    "MAE": 1.2083707044370993,
+    "R2": 0.8034216528546744,
+    "prediction_min": 0.21,
+    "prediction_max": 18.673333333333332
+  },
+  "recommendation": {
+    "intervention_grade": 10.0,
+    "students_screened": 79,
+    "students_flagged_for_human_review": 37,
+    "flag_rate": 0.46835443037974683,
+    "action": "Refer flagged students to a teacher or counsellor for human review; do not use predictions as the sole basis for academic decisions."
+  }
+}

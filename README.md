@@ -23,7 +23,7 @@ The objective is to predict students' final grades (`G3`) using demographic, soc
 
 What it is: Predicting a student's exact numerical final grade (G3, scored from 0 to 20) based on academic history, demographics, and lifestyle factors.
 
-ML Task & Models: Regression algorithms such as Linear Regression, Ridge/Lasso, Random Forest Regressor, and XGBoost.
+ML Task & Models: A mean baseline, Ridge regression, Random Forest, and Extra Trees are compared in a leakage-safe pipeline.
 
 Evaluation Metrics: Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), and $R^2$ score.
 
@@ -47,14 +47,30 @@ This means Random Forest explains approximately 80.3% of the variation in final 
 
 ### Requirements
 
-pandas>=2.0.0
+Install the dependency ranges from [`requirements.txt`](requirements.txt):
 
-numpy>=1.24.0
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+```
 
-scikit-learn>=1.2.0
+### Reproducible code workflow
 
-matplotlib>=3.7.0
+The reusable end-to-end implementation is
+[`student_performance_pipeline.py`](student-performance-regression/src/student_performance_pipeline.py).
+Run it from the repository root:
 
-seaborn>=0.12.0
+```powershell
+.\.venv\Scripts\python.exe student-performance-regression\src\student_performance_pipeline.py
+```
 
-xgboost>=1.7.0
+This runs the end-of-term scenario, where `G1` and `G2` are available. To
+evaluate the stricter early-intervention scenario without `G1` and `G2`:
+
+```powershell
+.\.venv\Scripts\python.exe student-performance-regression\src\student_performance_pipeline.py --exclude-grades --output-dir student-performance-regression\outputs\early_intervention
+```
+
+Each run writes the data audit and final hold-out metrics to `results.json`,
+the cross-validated model comparison to `model_comparison.csv`, and tuning
+results to `hyperparameter_tuning.csv`. The final recommendation is a
+human-review screening flag, not an automatic academic decision.

@@ -1,0 +1,4 @@
+Model,Best CV RMSE,Best parameters
+Random Forest,3.9169330535904168,"{""model__max_depth"": 10, ""model__min_samples_leaf"": 2, ""model__n_estimators"": 500}"
+Ridge,4.2663542538748045,"{""model__alpha"": 50.0}"
+Extra Trees,4.622387268896867,"{""model__max_depth"": 10, ""model__min_samples_leaf"": 2, ""model__n_estimators"": 500}"
